@@ -1,0 +1,169 @@
+[
+  {
+    "name": "AstroJs",
+    "image": "../icons/code/astroJs.webp",
+    "state": "Aprendiendo",
+    "rel": ["Desarrollo frontend"]
+  },
+  {
+    "name": "CSS",
+    "image": "../icons/code/css.webp",
+    "state": "Intermedio",
+    "rel": [
+      "Lenguajes de programación",
+      "Desarrollo backend",
+      "Herramientas de desarrollo",
+      "Desarrollo frontend",
+      "Base de datos",
+      "Otros"
+    ]
+  },
+  {
+    "name": "Docker",
+    "image": "../icons/code/docker.webp",
+    "state": "Aprendiendo",
+    "rel": ["Herramientas de desarrollo"]
+  },
+  {
+    "name": "Figma",
+    "image": "../icons/code/figma.webp",
+    "state": "Intermedio",
+    "rel": ["Herramientas de desarrollo"]
+  },
+  {
+    "name": "Git",
+    "image": "../icons/code/git.webp",
+    "state": "Aprendiendo",
+    "rel": ["Herramientas de desarrollo", "Otros"]
+  },
+  {
+    "name": "GitHub",
+    "image": "../icons/code/github.webp",
+    "state": "Intermedio",
+    "rel": ["Herramientas de desarrollo", "Otros"]
+  },
+  {
+    "name": "GraphQl",
+    "image": "../icons/code/graphql.webp",
+    "state": "Aprendiendo",
+    "rel": ["Desarrollo backend"]
+  },
+  {
+    "name": "Html",
+    "image": "../icons/code/html.webp",
+    "state": "Intermedio",
+    "rel": ["Desarrollo frontend"]
+  },
+  {
+    "name": "Java",
+    "image": "../icons/code/java.webp",
+    "state": "Aprendiendo",
+    "rel": ["Desarrollo frontend", "Lenguajes de programación"]
+  },
+  {
+    "name": "JavaScript",
+    "image": "../icons/code/javascript.webp",
+    "state": "Intermedio",
+    "rel": [
+      "Desarrollo backend",
+      "Desarrollo frontend",
+      "Lenguajes de programación"
+    ]
+  },
+  {
+    "name": "Linux",
+    "image": "../icons/code/linux.webp",
+    "state": "Aprendiendo",
+    "rel": ["Herramientas de desarrollo", "Otros"]
+  },
+  {
+    "name": "MySql",
+    "image": "../icons/code/mysql.webp",
+    "state": "Intermedio",
+    "rel": ["Base de datos"]
+  },
+  {
+    "name": "NestJs",
+    "image": "../icons/code/nestJs.webp",
+    "state": "Intermedio",
+    "rel": ["Desarrollo backend"]
+  },
+  {
+    "name": "NodeJs",
+    "image": "../icons/code/nodeJs.webp",
+    "state": "Intermedio",
+    "rel": ["Desarrollo backend", "Desarrollo frontend"]
+  },
+  {
+    "name": "postgreSQL",
+    "image": "../icons/code/postgreSQL.webp",
+    "state": "Aprendiendo",
+    "rel": ["Base de datos"]
+  },
+  {
+    "name": "Python",
+    "image": "../icons/code/python.webp",
+    "state": "Aprendiendo",
+    "rel": ["Desarrollo frontend", "Lenguajes de programación"]
+  },
+  {
+    "name": "ReactJs",
+    "image": "../icons/code/react.webp",
+    "state": "Intermedio",
+    "rel": ["Desarrollo frontend"]
+  },
+  {
+    "name": "Redis",
+    "image": "../icons/code/redis.webp",
+    "state": "Aprendiendo",
+    "rel": ["Desarrollo backend"]
+  },
+  {
+    "name": "Sass",
+    "image": "../icons/code/sass.webp",
+    "state": "Intermedio",
+    "rel": ["Desarrollo frontend"]
+  },
+  {
+    "name": "Scrum",
+    "image": "../icons/code/scrum.webp",
+    "state": "Aprendiendo",
+    "rel": ["Otros"]
+  },
+  {
+    "name": "Tailwind",
+    "image": "../icons/code/tailwind.webp",
+    "state": "Aprendiendo",
+    "rel": ["Desarrollo frontend"]
+  },
+  {
+    "name": "TypeORM",
+    "image": "../icons/code/typeorm.webp",
+    "state": "Intermedio",
+    "rel": ["Desarrollo backend"]
+  },
+  {
+    "name": "TypeScript",
+    "image": "../icons/code/typescript.webp",
+    "state": "Intermedio",
+    "rel": ["Desarrollo backend", "Lenguajes de programación"]
+  },
+  {
+    "name": "Vite",
+    "image": "../icons/code/vite.webp",
+    "state": "Intermedio",
+    "rel": ["Herramientas de desarrollo"]
+  },
+  {
+    "name": "ViteTest",
+    "image": "../icons/code/viteTest.webp",
+    "state": "Aprendiendo",
+    "rel": ["Herramientas de desarrollo"]
+  },
+  {
+    "name": "VsCode",
+    "image": "../icons/code/vscode.webp",
+    "state": "Intermedio",
+    "rel": ["Herramientas de desarrollo"]
+  }
+]

@@ -1,0 +1,51 @@
+---
+import Icon from '@/utils/Icon.astro'
+import './style.scss'
+
+import {
+  PaintPalette,
+  GroupOfProjects,
+  MaleUser,
+  Exterior,
+  Internship,
+  Mail,
+  CloudLink
+} from '@icons/index'
+
+const itemsNav = [
+  {
+    title: 'proyectos',
+    file: GroupOfProjects
+  },
+  {
+    title: 'Acerca de mi',
+    file: MaleUser
+  },
+  {
+    title: 'Inicio',
+    file: Exterior
+  },
+  {
+    title: 'Experiencias formativas',
+    file: Internship
+  },
+  {
+    title: 'Hablemos',
+    file: Mail
+  }
+]
+---
+
+<nav>
+  <button title='Escoger tema'><Icon file={PaintPalette} /></button>
+  <ul>
+    {
+      itemsNav.map(({ file, title }) => (
+        <li title={title}>
+          <Icon file={file} />
+        </li>
+      ))
+    }
+  </ul>
+  <a title='CV'><Icon file={CloudLink} /></a>
+</nav>

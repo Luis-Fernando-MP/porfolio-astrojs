@@ -1,0 +1,54 @@
+:root {
+  --global-family-font: 'Source Sans Pro', sans-serif, 'Segoe UI Emoji';
+  --global-family-size: 12px;
+  --xl-font-size: 4em;
+  --h1-font-size: 3em;
+  --h2-font-size: 2em;
+  --h3-font-size: 1.8em;
+  --h4-font-size: 1.6em;
+  --p-font-size: 1.4em;
+  --span-font-size: 1.2em;
+  --small-font-size: 1em;
+  --smaller-font-size: 0.8em;
+
+  --bg-fondo-1: #07090e;
+  --bg-fondo-2: #0f121a;
+  --txt-letra-1: #d5defb;
+  --txt-letra-2: #a1acce;
+  --bg-normal: #6680db;
+  @media (prefers-color-scheme: light) {
+    --bg-fondo-1: #f5faff;
+    --bg-fondo-2: #ebf5ff;
+    --txt-letra-1: #000000;
+    --txt-letra-2: #38394a;
+    --bg-normal: #6680db;
+  }
+}
+
+//Sass
+$f-family: var(--global-family-font);
+$f-family-size: var(--global-family-size);
+$f-xl: var(--xl-font-size);
+$f-h1: var(--h1-font-size);
+$f-h2: var(--h2-font-size);
+$f-h3: var(--h3-font-size);
+$f-h4: var(--h4-font-size);
+$f-p: var(--p-font-size);
+$f-span: var(--span-font-size);
+$f-small: var(--small-font-size);
+$f-smaller: var(--smaller-font-size);
+
+$bg-1: var(--bg-fondo-1);
+$bg-2: var(--bg-fondo-2);
+$txt-1: var(--txt-letra-1);
+$txt-2: var(--txt-letra-2);
+$bg-normal: var(--bg-normal);
+
+// Dispositivos
+$min-small-screen: 450px;
+$small-screen: 576px; // (smartphones)
+$medium-screen: 820px; // (tablets en modo retrato)
+$large-screen: 992px; // (tablets en modo apaisado o laptops)
+$extra-large-screen: 1200px; // (computadoras de escritorio)
+
+$padding: 15px;

@@ -1,0 +1,11 @@
+---
+import type { ImageMetadata } from 'astro'
+
+interface Props {
+  file: ImageMetadata
+}
+
+const { file } = Astro.props
+---
+
+<img src={file.src} />

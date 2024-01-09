@@ -1,0 +1,32 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/document';
+@use '@sass/utils/media' as m;
+@use '@sass/config/global';
+
+.section {
+  background: v.$bg-2;
+  width: 100%;
+  min-height: 50vh;
+  height: auto;
+  margin: (v.$padding * 2) auto;
+}
+
+nav {
+  width: 100%;
+  background-color: v.$bg-2;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding-top: v.$padding * 2;
+  padding-bottom: v.$padding;
+}
+.chatBot {
+  position: fixed;
+  bottom: 0;
+  right: calc((100vw - 990px) / 2);
+  background-color: v.$bg-2;
+  margin: v.$padding;
+  @include m.largeScreen() {
+    right: 0%;
+  }
+}

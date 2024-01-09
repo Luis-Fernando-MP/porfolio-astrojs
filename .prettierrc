@@ -1,0 +1,27 @@
+{
+  "overrides": [
+    {
+      "files": ["*.json", "*.md", "*.toml", "*.yml"],
+      "options": {
+        "useTabs": false
+      }
+    }
+  ],
+  "plugins": ["prettier-plugin-astro"],
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "embeddedLanguageFormatting": "auto",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "printWidth": 80,
+  "jsxSingleQuote": true,
+  "endOfLine": "lf",
+  "useTabs": false
+}

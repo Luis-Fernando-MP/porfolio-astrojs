@@ -1,0 +1,85 @@
+[
+  {
+    "company": "AVS Consultores Informáticos",
+    "date": "Jul. 2023 – 0ct. 2023",
+    "workTime": 4,
+    "position": "Practicante en el desarrollo de aplicaciones web",
+    "resumeCompany": "Organización local que promueve el desarrollo sostenible de aplicaciones, ofrece servicios públicos, impulsa la participación ciudadana y conserva la identidad cultural del distrito.",
+    "logo": "AVS-CONSULTORES",
+    "role": ["developer", "practicante", "Cabecilla de equipo"],
+    "url": "https://avsconsultoresinformaticos.edu.pe/",
+    "responsibilities": [
+      "Desarrollar y mantener las aplicaciones web utilizando tecnologías como JavaScript y PHP",
+      "Comandar la elaboración de una aplicación de Seguros.",
+      "Gestionar la información y comandar los roles para el desarrollo de proyectos.",
+      "Administrar los contenidos digitales del sitio web utilizando."
+    ],
+    "finalArgument": "Mi experiencia en esta empresa ha sido más que un trabajo; ha sido un viaje de aprendizaje y crecimiento. Agradezco la oportunidad de mejorar mis habilidades, ya que he mejorado en el uso de monorepositorios con ReactJs y NestJs. ¡Fue un honor haber sido parte de este equipo inspirador!"
+  },
+  {
+    "company": "Chia Puquio",
+    "date": "Ene. 2023 - Ago. 2023",
+    "workTime": 8,
+    "position": "Asesor del servicio de atención al cliente",
+    "resumeCompany": "El Chia Puquio, un encantador recreo turístico en Ingenio Concepción, Huancayo, Junín, es conocido por su exquisita preparación de platillos a base de trucha y sus impresionantes vistas panorámicas. Este destino es altamente popular en la zona gracias a su combinación única de experiencia culinaria y entorno natural pintoresco.",
+    "logo": "ingenio",
+    "role": ["No relacionados", "Cabecilla de equipo"],
+    "url": null,
+    "responsibilities": [
+      "Cumplir con el servicio de atención al cliente.",
+      "Participar en trabajos grupales para mejorar atención a los visitantes.",
+      "Entonar una atención amable y personalizada a los comensales."
+    ],
+    "finalArgument": ""
+  },
+  {
+    "company": "La Huaycha",
+    "date": "Ago. 2022 - Ene. 2023",
+    "workTime": 6,
+    "position": "Especialista en ventas del servicio de atención al cliente",
+    "resumeCompany": "La Huaycha, es un destacado recreo turístico en la marguen derecha de la ciudad de Huancayo, destaca por su continua innovación y encanto natural.",
+    "logo": "ingenio",
+    "role": ["No relacionados"],
+    "url": "https://web.facebook.com/la.huaycha.huancayo.recreo/?_rdc=1&_rdr",
+    "responsibilities": [
+      "Me encargue de proporcionar un servicio excepcional, resolviendo inquietudes y ofreciendo orientación experta a los visitantes.",
+      "Encabece la planificación y ejecución de eventos especiales, contribuyendo a crear experiencias memorables y atrayentes para los visitantes.",
+      "Mejore mis habilidades de trabajo en equipo, participando activamente para mejorar el atractivo del recreo."
+    ],
+    "finalArgument": "..."
+  },
+  {
+    "company": "Municipalidad de cajas",
+    "date": "Abr. 2020 - Jul. 2021",
+    "workTime": 4,
+    "position": "Practicante de computación",
+    "resumeCompany": "Entidad local encargada de promover el desarrollo sostenible, brindar servicios públicos, fomentar la participación ciudadana y preservar la identidad cultural del distrito.",
+    "logo": "cajas",
+    "role": ["developer", "practicante", "computación"],
+    "url": "...",
+    "responsibilities": [
+      "Realicé mantenimiento y actualizaciones en la página web.",
+      "Gestioné el portal de transparencia.",
+      "Gestioné los contenidos digitales del sitio web con herramientas modernas.",
+      "Participé en reuniones para evaluar la interfaz entre hardware y software."
+    ],
+    "finalArgument": "..."
+  },
+  {
+    "company": "Industria Gráfica Inmaculada Concepción",
+    "date": "Abr. 2019 - Dic. 2019",
+    "workTime": 9,
+    "position": "Practicante de diseño web",
+    "resumeCompany": "Organización local que promueve el desarrollo sostenible de aplicaciones, ofrece servicios públicos, impulsa la participación ciudadana y conserva la identidad cultural del distrito.",
+    "logo": "Concepcion",
+    "role": ["diseñador", "practicante", "computación"],
+    "url": "...",
+    "responsibilities": [
+      "Realicé diseños para impresión, como folletos y tarjetas de presentación.",
+      "Me encargué de la maquetación y diseño de páginas web responsivas.",
+      "Realicé la edición de imágenes y el retoque fotográfico.",
+      "laboré ilustraciones y gráficos personalizados"
+    ],
+    "finalArgument": "..."
+  }
+]

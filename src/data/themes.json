@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Rey nocturno",
+    "colors": {
+      "bg-fondo-1": "#07090E",
+      "bg-fondo-2": "#0F121A",
+      "txt-letra-1": "#D5DEFB",
+      "txt-letra-2": "#A1ACCE",
+      "bg-normal": "#6680DB"
+    }
+  },
+  {
+    "title": "Rey claro",
+    "colors": {
+      "bg-fondo-1": "#F5FAFF",
+      "bg-fondo-2": "#EBF5FF",
+      "txt-letra-1": "#000000",
+      "txt-letra-2": "#38394A",
+      "bg-normal": "#6680DB"
+    }
+  }
+]

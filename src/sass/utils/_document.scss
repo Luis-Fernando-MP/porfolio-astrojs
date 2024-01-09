@@ -1,0 +1,29 @@
+@use '../config/variables' as v;
+@use './media' as m;
+
+// %container {
+//   width: 100%;
+//   height: 100vh;
+//   position: relative;
+//   @extend %paddingDocument;
+// }
+
+%scroll-visible {
+  &::-webkit-scrollbar-thumb {
+    background: v.$bg-1;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 70px;
+  }
+}
+
+%scroll-hidden {
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

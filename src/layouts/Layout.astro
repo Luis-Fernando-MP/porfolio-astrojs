@@ -1,0 +1,46 @@
+---
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+
+import '@fontsource/source-sans-pro/200.css'
+import '@fontsource/source-sans-pro/300.css'
+import '@fontsource/source-sans-pro/400.css'
+import '@fontsource/source-sans-pro/600.css'
+import '@fontsource/source-sans-pro/700.css'
+import '@fontsource/source-sans-pro/900.css'
+
+import './layout.scss'
+
+import Nav from '@components/nav/Nav.astro'
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='description' content='Astro description' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/logo.webp' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main>
+      <Nav />
+      <aside class='chatBot'><h2>chatBot</h2></aside>
+      <slot />
+    </main>
+  </body>
+</html>
+<script>
+  const { body, documentElement } = document
+  document?.addEventListener('scroll', () => {
+    const nav = body.querySelector('nav')
+    if (!nav || !(nav instanceof HTMLElement)) return
+    if (documentElement.scrollTop > 150) return nav.classList.add('active')
+    nav?.classList.remove('active')
+  })
+</script>
