@@ -1,6 +1,7 @@
 ---
 import Icon from '@/utils/Icon.astro'
 import './style.scss'
+import themes from '@data/themes.json'
 
 import {
   PaintPalette,
@@ -14,38 +15,68 @@ import {
 
 const itemsNav = [
   {
-    title: 'proyectos',
-    file: GroupOfProjects
-  },
-  {
-    title: 'Acerca de mi',
-    file: MaleUser
-  },
-  {
     title: 'Inicio',
+    link: 'main',
     file: Exterior
   },
   {
     title: 'Experiencias formativas',
+    link: 'experiences',
     file: Internship
   },
   {
+    title: 'proyectos',
+    link: 'projects',
+    file: GroupOfProjects
+  },
+  {
+    title: 'Acerca de mi',
+    link: 'about',
+    file: MaleUser
+  },
+  {
     title: 'Hablemos',
+    link: 'contact',
     file: Mail
   }
 ]
 ---
 
 <nav>
-  <button title='Escoger tema'><Icon file={PaintPalette} /></button>
-  <ul>
+  <div class='nav-themes'>
+    <button title='Escoger tema' id='theme-selector'
+      ><Icon file={PaintPalette} /></button
+    >
+    <ul class='nav-theme' id='nav-themes'>
+      {
+        themes.map(({ title, colors }) => (
+          <li
+            class='nav-theme__item'
+            title={title}
+            style={`--theme-color: linear-gradient(to right, ${colors['bg-fondo-1']}, ${colors['bg-normal']})`}
+          >
+            <button id='theme-item' />
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <ul class='nav-items' id='nav-links-container'>
     {
-      itemsNav.map(({ file, title }) => (
-        <li title={title}>
-          <Icon file={file} />
+      itemsNav.map(({ file, title, link }) => (
+        <li title={title} class='nav-item'>
+          <a href={`#${link}`} class='hash-link' data-link={link}>
+            <Icon file={file} />
+          </a>
         </li>
       ))
     }
+    <div class='nav-border'></div>
   </ul>
-  <a title='CV'><Icon file={CloudLink} /></a>
+  <a title='CV' target='_blank' rel='noopener noreferrer' href=''
+    ><Icon file={CloudLink} /></a
+  >
 </nav>
+
+<script src='./themes.ts'></script>
+<script src='./navScript.ts'></script>

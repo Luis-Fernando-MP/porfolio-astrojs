@@ -52,3 +52,13 @@ $large-screen: 992px; // (tablets en modo apaisado o laptops)
 $extra-large-screen: 1200px; // (computadoras de escritorio)
 
 $padding: 15px;
+$icon: var(--icon-size);
+$size-item: calc($icon * 3);
+$radius: 10px;
+
+//Gradients
+$gr-1: linear-gradient(128deg, #e5bbff 6.24%, #4476fc 82.68%);
+$gr-2: linear-gradient(143deg, #ff0844 20.17%, #ffb199 99.29%);
+$gr-3: linear-gradient(134deg, #0fd850 8.1%, #f9f047 94.37%);
+$gr-4: linear-gradient(323deg, #0acffe -0.97%, #3c4ad7 100.95%);
+$gr-5: linear-gradient(323deg, #0acffe -0.97%, #3c4ad7 100.95%);

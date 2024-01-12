@@ -1,0 +1,73 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/border' as b;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  position: sticky;
+  top: v.$padding;
+  z-index: 100;
+  margin-top: v.$padding * 2;
+  margin-bottom: v.$padding;
+  border-radius: v.$radius;
+}
+.nav {
+  &-themes {
+    background-color: v.$bg-2;
+    position: relative;
+    border-radius: v.$radius;
+  }
+  &-theme {
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    top: 80%;
+    visibility: hidden;
+    opacity: 0;
+    &.select-theme {
+      top: 100%;
+      visibility: visible;
+      opacity: 1;
+    }
+    border: 2px solid v.$bg-1;
+    background-color: v.$bg-2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: v.$radius;
+    height: auto;
+    position: absolute;
+    margin-top: v.$padding;
+    left: 0;
+    gap: v.$padding;
+    padding: v.$padding 0;
+    &__item {
+      width: calc(v.$icon * 1.5);
+      height: calc(v.$icon * 1.5);
+      @include b.gradientBorder($radius: 50%);
+      overflow: hidden;
+    }
+    &__item > button {
+      background-image: var(--theme-color);
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-items {
+    display: flex;
+    position: relative;
+  }
+  &-border {
+    width: v.$size-item;
+    height: v.$size-item;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: calc(v.$size-item * 2);
+    @include b.gradientBorder;
+    transition: 0.2s cubic-bezier(0.47, 0, 0, 1.46);
+  }
+}

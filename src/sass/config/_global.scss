@@ -64,10 +64,17 @@ a {
   text-decoration: none;
 }
 
+.icon {
+  cursor: pointer;
+  padding: $icon;
+  img {
+    width: $icon;
+    height: $icon;
+  }
+}
+
 img,
 svg {
-  width: 30px;
-  height: 30px;
   object-fit: contain;
   user-select: none;
   -webkit-user-drag: none;
@@ -76,4 +83,5 @@ svg {
 button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }

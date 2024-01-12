@@ -16,7 +16,8 @@ export default defineConfig({
       '@icons/*': resolve(process.cwd(), './src/icons/*'),
       '@components/*': resolve(process.cwd(), './src/components/*'),
       '@layouts/*': resolve(process.cwd(), './src/layouts/*'),
-      '@pages/*': resolve(process.cwd(), './src/pages/*')
+      '@pages/*': resolve(process.cwd(), './src/pages/*'),
+      '@data/*': resolve(process.cwd(), './src/data/*')
     }
   },
   integrations: [react()]
