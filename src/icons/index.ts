@@ -1,10 +1,12 @@
 import AdministrativeTools from './AdministrativeTools.webp'
 import ArtificialIntelligence from './ArtificialIntelligence.webp'
 import AtSign from './AtSign.webp'
+import ChatMessage from './ChatMessage.webp'
 import BallerinaFullBody from './BallerinaFullBody.webp'
 import CloudLink from './CloudLink.webp'
 import Database from './Database.webp'
 import Exterior from './Exterior.webp'
+import Eye from './Eye.webp'
 import Figma from './Figma.webp'
 import GitHub from './GitHub.webp'
 import Gmail from './Gmail.webp'
@@ -32,10 +34,12 @@ export {
   AdministrativeTools,
   ArtificialIntelligence,
   AtSign,
+  ChatMessage,
   BallerinaFullBody,
   CloudLink,
   Database,
   Exterior,
+  Eye,
   Figma,
   GitHub,
   Gmail,

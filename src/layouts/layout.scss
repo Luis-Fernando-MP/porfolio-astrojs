@@ -3,23 +3,20 @@
 @use '@sass/utils/media' as m;
 @use '@sass/config/global';
 
-.section {
-  background: v.$bg-2;
-  width: 100%;
-  min-height: 50vh;
-  height: auto;
-  margin: (v.$padding * 2) auto;
+:root {
+  --icon-size: 20px;
+  @include m.smallScreen() {
+    --icon-size: 15px;
+  }
 }
 
-nav {
+.section {
   width: 100%;
-  background-color: v.$bg-2;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  padding-top: v.$padding * 2;
-  padding-bottom: v.$padding;
+  min-height: 100vh;
+  height: auto;
+  padding-top: v.$padding * 6;
 }
+
 .chatBot {
   position: fixed;
   bottom: 0;
