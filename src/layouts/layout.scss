@@ -10,11 +10,16 @@
   }
 }
 
+main.scroll .section {
+  padding-top: v.$padding * 6;
+}
+
 .section {
+  transition: 0.2s ease-in-out;
+  padding-top: v.$padding;
   width: 100%;
   min-height: 100vh;
   height: auto;
-  padding-top: v.$padding * 6;
 }
 
 .chatBot {
