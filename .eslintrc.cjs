@@ -16,7 +16,8 @@ module.exports = {
     quotes: ['warn', 'single'],
     'jsx-quotes': [2, 'prefer-single'],
     'eol-last': 'off',
-    'space-before-function-paren': 'off'
+    'space-before-function-paren': 'off',
+    "no-undef": "off"
   },
   overrides: [
     {
