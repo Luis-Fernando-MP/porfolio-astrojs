@@ -29,6 +29,10 @@ body {
   font-size: $f-family-size;
   overflow: hidden auto;
   padding: $padding;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
 }
 
 main {
@@ -37,6 +41,7 @@ main {
   margin: auto;
   max-width: 990px;
   width: auto;
+  background-color: brown;
 }
 
 $listOfFontsSize: (

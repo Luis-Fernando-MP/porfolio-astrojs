@@ -18,8 +18,35 @@ main.scroll .section {
   transition: 0.2s ease-in-out;
   padding-top: v.$padding;
   width: 100%;
-  min-height: 100vh;
-  height: auto;
+}
+h1,
+h2,
+h3 {
+  color: v.$txt-1;
+}
+h1 {
+  font-weight: 900;
+}
+h2 {
+  font-weight: 800;
+}
+
+h4,
+p,
+a,
+span,
+small {
+  color: v.$txt-2;
+}
+h4 {
+  font-weight: 400;
+}
+p {
+  font-weight: 300;
+}
+span,
+small {
+  font-weight: 200;
 }
 
 .chatBot {
@@ -30,5 +57,18 @@ main.scroll .section {
   margin: v.$padding;
   @include m.largeScreen() {
     right: 0%;
+  }
+}
+
+@include m.smallScreen() {
+  body {
+    padding: 0px;
+    background-color: greenyellow;
+  }
+  main {
+    margin: auto;
+    min-width: 100vw;
+    width: 100%;
+    background-color: rgb(27, 108, 139);
   }
 }
