@@ -17,7 +17,8 @@ module.exports = {
     'jsx-quotes': [2, 'prefer-single'],
     'eol-last': 'off',
     'space-before-function-paren': 'off',
-    "no-undef": "off"
+    "no-undef": "off",
+    "no-explicit-any": "off"
   },
   overrides: [
     {

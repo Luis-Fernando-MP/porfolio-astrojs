@@ -19,6 +19,7 @@
     "outDir": "./dist",
     "moduleResolution": "node",
     "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "jsxImportSource": "react",
+    "noImplicitAny": false
   }
 }
