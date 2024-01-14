@@ -1,0 +1,23 @@
+---
+import backgroundColors from '@data/backgroundColors.json'
+export enum BallsPosition {
+  left = 'LEFT-CENTER',
+  right = 'RIGHT-CENTER'
+}
+
+interface Props {
+  position?: BallsPosition | null
+  colors?: typeof backgroundColors.mora
+}
+import './style.scss'
+
+const { colors, position } = Astro.props
+
+const backgroundBalls = colors ?? backgroundColors.mora
+---
+
+<section class={`balls ${position || BallsPosition.right}`}>
+  <div style={`--color-ball: ${backgroundBalls.color1}`}></div>
+  <div style={`--color-ball: ${backgroundBalls.color2}`}></div>
+  <div style={`--color-ball: ${backgroundBalls.color3}`}></div>
+</section>

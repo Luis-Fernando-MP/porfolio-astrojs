@@ -1,0 +1,147 @@
+@use '@sass/config/variables' as v;
+
+header,
+.header-personalInfo {
+  display: flex;
+  gap: v.$padding;
+}
+
+$minHeight: 70vh;
+
+header {
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  min-height: $minHeight;
+  height: auto;
+  padding: v.$padding;
+}
+.header-personalInfo,
+.header-additional {
+  width: 50%;
+  height: $minHeight;
+}
+
+.header-personalInfo {
+  justify-content: center;
+  flex-direction: column;
+  h1 {
+    background: v.$gr-1;
+    background-clip: text;
+    color: transparent;
+    font-size: v.$f-xl;
+    font-weight: 900;
+  }
+  aside {
+    width: 100%;
+    display: flex;
+    gap: v.$padding;
+    > a div {
+      padding-left: 0;
+    }
+  }
+}
+
+.header-additional {
+  display: grid;
+  place-content: center;
+  position: relative;
+  &__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  &__icon {
+    &.differentIcon {
+      $background: var(--optional-background);
+      padding: v.$padding;
+      background-color: $background;
+      border-radius: v.$radius;
+      backdrop-filter: blur(10px);
+    }
+    position: absolute;
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+    $animation: var(--optional-animation);
+    animation: fadeInUp ease forwards;
+    animation-duration: $animation;
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(-50vh);
+        filter: blur(5px);
+      }
+      50% {
+        opacity: 0.8;
+        transform: translateY(50%);
+        filter: blur(0);
+      }
+      90% {
+        opacity: 0.05;
+        transform: translateY(20vh);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(22vh);
+        filter: blur(5px);
+      }
+    }
+  }
+}
+
+.header-me {
+  z-index: 1;
+  top: -30%;
+  width: 250px;
+  position: relative;
+  padding: v.$padding;
+  overflow: hidden;
+  height: auto;
+  gap: v.$padding;
+  flex-direction: column;
+  display: flex;
+  border-radius: v.$radius;
+  background-color: v.$bg-2;
+  p {
+    font-size: v.$f-span;
+  }
+
+  &__image {
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    gap: v.$padding;
+    img {
+      min-width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+      background-color: v.$bg-1;
+    }
+  }
+  &__text {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    h4 {
+      width: 150px;
+      font-family: v.$fm3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    a {
+      font-weight: 300;
+      color: v.$bg-normal;
+    }
+  }
+}

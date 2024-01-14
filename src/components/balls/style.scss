@@ -1,0 +1,57 @@
+@use '@sass/utils/media' as m;
+
+$backgroundBall: var(--color-ball);
+
+.balls {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  div {
+    width: 250px;
+    height: 250px;
+    background-color: $backgroundBall;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.6;
+    top: 30%;
+    animation: bigToSmall 2s infinite alternate;
+    &:first-child {
+      top: 50%;
+    }
+    @keyframes bigToSmall {
+      from {
+        transform: rotateX(0px);
+        filter: blur(80px);
+      }
+      to {
+        transform: rotateX(360px);
+        filter: blur(100px);
+      }
+    }
+  }
+  &.LEFT-CENTER {
+    div {
+      left: 15%;
+      transform: translate(-50%, -50%);
+      &:first-child {
+        left: 10%;
+      }
+      &:last-child {
+        left: 30%;
+      }
+    }
+  }
+  &.RIGHT-CENTER {
+    div {
+      right: 15%;
+      transform: translate(50%, -50%);
+      &:first-child {
+        right: 10%;
+      }
+      &:last-child {
+        right: 30%;
+      }
+    }
+  }
+}
