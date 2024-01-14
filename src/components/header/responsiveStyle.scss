@@ -1,0 +1,47 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/media' as m;
+
+@include m.largeScreen() {
+  header {
+    min-height: auto;
+    justify-content: start;
+    flex-direction: column-reverse;
+    .header-personalInfo,
+    .header-additional {
+      width: 100%;
+    }
+    .header-personalInfo {
+      align-items: center;
+      height: auto;
+      h1,
+      h3,
+      h4 {
+        text-align: center;
+      }
+      h4,
+      aside {
+        width: 400px;
+      }
+      aside {
+        justify-content: center;
+      }
+    }
+    .header-additional {
+      height: 20vh;
+    }
+    .header-me {
+      top: initial;
+    }
+  }
+}
+
+@include m.smallScreen() {
+  header {
+    .header-personalInfo {
+      h4,
+      aside {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/document';
+@use '@sass/utils/media' as m;
+:root {
+  --icon-size: 20px;
+  @include m.smallScreen() {
+    --icon-size: 15px;
+  }
+}
+
+@include m.largeScreen() {
+  body {
+    padding: v.$padding - 5;
+  }
+  main {
+    margin: 0;
+    width: 100%;
+    min-width: 100vw;
+    position: relative;
+    height: 100vh;
+  }
+  .chatBot {
+    right: v.$padding;
+    bottom: v.$padding;
+  }
+}

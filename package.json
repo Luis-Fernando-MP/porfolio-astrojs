@@ -17,7 +17,9 @@
   "dependencies": {
     "@astrojs/check": "0.3.4",
     "@astrojs/react": "3.0.9",
-    "@fontsource/source-sans-pro": "5.0.8",
+    "@fontsource-variable/baloo-da-2": "^5.0.18",
+    "@fontsource-variable/lexend": "^5.0.18",
+    "@fontsource-variable/tourney": "^5.0.19",
     "@formkit/auto-animate": "0.8.1",
     "@types/react": "18.2.46",
     "@types/react-dom": "18.2.18",

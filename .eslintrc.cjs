@@ -9,7 +9,7 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    'no-unused-vars': 'warn',
+    'no-unused-vars': 'off',
     'no-multiple-empty-lines': 'off',
     'no-tabs': 'off',
     indent: ['error', 2],
@@ -17,7 +17,8 @@ module.exports = {
     'jsx-quotes': [2, 'prefer-single'],
     'eol-last': 'off',
     'space-before-function-paren': 'off',
-    "no-undef": "off"
+    "no-undef": "off",
+    "no-explicit-any": "off"
   },
   overrides: [
     {

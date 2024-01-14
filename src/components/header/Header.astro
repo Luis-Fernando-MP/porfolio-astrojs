@@ -1,0 +1,61 @@
+---
+import './style.scss'
+import './responsiveStyle.scss'
+import info from '@data/me.json'
+import Icon from '@/utils/Icon.astro'
+import { GitHub, Gmail, LinkedIn, WhatsApp } from '@icons/index'
+---
+
+<header class='section hash-nav' id='main'>
+  <section class='header-personalInfo'>
+    <h3>Hola 👋 mi nombre es</h3>
+    <h1>{info.name}</h1>
+    <h4>{info.experienceDetail}</h4>
+    <aside class='header-social'>
+      <a
+        title='GitHub'
+        target='_blank'
+        rel='noopener noreferrer'
+        href={info.githubLink}
+      >
+        <Icon file={GitHub} />
+      </a>
+      <a
+        title='LinkedIn'
+        target='_blank'
+        rel='noopener noreferrer'
+        href={info.linkedInLink}><Icon file={LinkedIn} /></a
+      ><a
+        title='GMail'
+        target='_blank'
+        rel='noopener noreferrer'
+        href={info.GMailLink}><Icon file={Gmail} /></a
+      >
+      <a
+        title='WhatsApp'
+        target='_blank'
+        rel='noopener noreferrer'
+        href={info.whatsAppLink}><Icon file={WhatsApp} /></a
+      >
+    </aside>
+  </section>
+  <section class='header-additional'>
+    <aside class='header-me'>
+      <div class='header-me__image'>
+        <img src='/me.webp' alt={info.name} />
+        <div class='header-me__text'>
+          <h4>{`${info.name} ${info.lastName}`}</h4>
+          <a
+            title='visita mi GitHub'
+            target='_blank'
+            rel='noopener noreferrer'
+            href={info.githubLink}>{info.atGithub}</a
+          >
+        </div>
+      </div>
+      <p>{info.passionRole}</p>
+    </aside>
+    <ul class='header-additional__container'></ul>
+  </section>
+</header>
+<script src='./headerScript.ts'></script>
