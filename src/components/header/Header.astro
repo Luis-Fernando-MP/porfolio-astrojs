@@ -4,12 +4,9 @@ import './responsiveStyle.scss'
 import info from '@data/me.json'
 import Icon from '@/utils/Icon.astro'
 import { GitHub, Gmail, LinkedIn, WhatsApp } from '@icons/index'
-
-import Balls from '@components/balls/Balls.astro'
 ---
 
 <header class='section hash-nav' id='main'>
-  <Balls />
   <section class='header-personalInfo'>
     <h3>Hola 👋 mi nombre es</h3>
     <h1>{info.name}</h1>
@@ -20,7 +17,8 @@ import Balls from '@components/balls/Balls.astro'
         target='_blank'
         rel='noopener noreferrer'
         href={info.githubLink}
-        ><Icon file={GitHub} />
+      >
+        <Icon file={GitHub} />
       </a>
       <a
         title='LinkedIn'

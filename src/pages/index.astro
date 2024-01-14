@@ -1,12 +1,13 @@
 ---
+import Balls from '@components/balls/Balls.astro'
 import Layout from '../layouts/Layout.astro'
-import Card from '../components/Card.astro'
 import Header from '@components/header/Header.astro'
 ---
 
 <Layout title='Porfolio: Luis Fernando'>
+  <Balls slot='balls' />
   <Header />
-  <section class='experience section hash-nav' id='experiences'>
+  <!-- <section class='experience section hash-nav' id='experiences'>
     <h2>experience</h2>
   </section>
   <section class='projects section hash-nav' id='projects'>
@@ -17,5 +18,5 @@ import Header from '@components/header/Header.astro'
   <section class='contact section hash-nav' id='contact'>
     <h2>contact</h2>
   </section>
-  <footer><h2>footer</h2></footer>
+  <footer><h2>footer</h2></footer> -->
 </Layout>

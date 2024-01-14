@@ -10,12 +10,13 @@ import '@fontsource-variable/baloo-da-2'
 import '@fontsource-variable/lexend'
 
 import './layout.scss'
+import './responsiveLayout.scss'
 
 import Nav from '@components/nav/Nav.astro'
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang='es'>
   <head>
     <meta charset='UTF-8' />
     <meta name='description' content='Astro description' />
@@ -25,11 +26,12 @@ import Nav from '@components/nav/Nav.astro'
     <title>{title}</title>
   </head>
   <body>
+    <slot name='balls' />
     <main>
       <Nav />
-      <aside class='chatBot'><h2>chatBot</h2></aside>
       <slot />
     </main>
+    <aside class='chatBot'><h2>chatBot</h2></aside>
   </body>
 </html>
 <script>

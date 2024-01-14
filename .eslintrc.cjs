@@ -9,7 +9,7 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    'no-unused-vars': 'warn',
+    'no-unused-vars': 'off',
     'no-multiple-empty-lines': 'off',
     'no-tabs': 'off',
     indent: ['error', 2],

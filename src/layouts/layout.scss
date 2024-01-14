@@ -1,13 +1,31 @@
 @use '@sass/config/variables' as v;
 @use '@sass/utils/document';
-@use '@sass/utils/media' as m;
 @use '@sass/config/global';
 
-:root {
-  --icon-size: 20px;
-  @include m.smallScreen() {
-    --icon-size: 15px;
-  }
+body {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  width: 100vw;
+  height: 100vh;
+  font-family: v.$f-family;
+  color: v.$txt-1;
+  background-color: v.$bg-1;
+  @extend %scroll-hidden;
+  font-size: v.$f-family-size;
+  overflow: hidden auto;
+  padding: v.$padding;
+}
+
+main {
+  min-height: 100vh;
+  height: auto;
+  transition: 0.1s ease-in-out;
+  width: 990px;
+  margin: auto;
+  overflow: hidden;
 }
 
 main.scroll .section {
@@ -55,20 +73,4 @@ small {
   right: calc((100vw - 990px) / 2);
   background-color: v.$bg-2;
   margin: v.$padding;
-  @include m.largeScreen() {
-    right: 0%;
-  }
-}
-
-@include m.smallScreen() {
-  body {
-    padding: 0px;
-    background-color: greenyellow;
-  }
-  main {
-    margin: auto;
-    min-width: 100vw;
-    width: 100%;
-    background-color: rgb(27, 108, 139);
-  }
 }

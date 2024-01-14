@@ -3,7 +3,6 @@
 
 @include m.largeScreen() {
   header {
-    background-color: blue;
     min-height: auto;
     justify-content: start;
     flex-direction: column-reverse;
@@ -38,7 +37,6 @@
 
 @include m.smallScreen() {
   header {
-    background-color: red;
     .header-personalInfo {
       h4,
       aside {

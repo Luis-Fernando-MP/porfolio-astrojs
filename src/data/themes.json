@@ -18,5 +18,15 @@
       "txt-letra-2": "#38394A",
       "bg-normal": "#6680DB"
     }
+  },
+  {
+    "title": "Dios dorado",
+    "colors": {
+      "bg-fondo-1": "#fffaf3",
+      "bg-fondo-2": "#f5f5f5",
+      "txt-letra-1": "#555555",
+      "txt-letra-2": "#474642",
+      "bg-normal": "#817155"
+    }
   }
 ]
