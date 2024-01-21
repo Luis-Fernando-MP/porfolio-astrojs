@@ -3,16 +3,14 @@
     "company": "AVS Consultores Informáticos",
     "date": "Jul. 2023 – 0ct. 2023",
     "workTime": 4,
-    "position": "Practicante en el desarrollo de aplicaciones web",
+    "position": "Desarrollador de aplicaciones web",
     "resumeCompany": "Organización local que promueve el desarrollo sostenible de aplicaciones, ofrece servicios públicos, impulsa la participación ciudadana y conserva la identidad cultural del distrito.",
     "logo": "AVS-CONSULTORES",
     "role": ["developer", "practicante", "Cabecilla de equipo"],
     "url": "https://avsconsultoresinformaticos.edu.pe/",
     "responsibilities": [
-      "Desarrollar y mantener las aplicaciones web utilizando tecnologías como JavaScript y PHP",
-      "Comandar la elaboración de una aplicación de Seguros.",
-      "Gestionar la información y comandar los roles para el desarrollo de proyectos.",
-      "Administrar los contenidos digitales del sitio web utilizando."
+      "Desarrolle y mantuve las aplicaciones web utilizando tecnologías como JavaScript y PHP. Ademas comandé y participé en la elaboración de algunas aplicación como Alhem SAC y Casa Verde.",
+      "Administré los contenidos digitales del sitio web."
     ],
     "finalArgument": "Mi experiencia en esta empresa ha sido más que un trabajo; ha sido un viaje de aprendizaje y crecimiento. Agradezco la oportunidad de mejorar mis habilidades, ya que he mejorado en el uso de monorepositorios con ReactJs y NestJs. ¡Fue un honor haber sido parte de este equipo inspirador!"
   },
@@ -26,9 +24,9 @@
     "role": ["No relacionados", "Cabecilla de equipo"],
     "url": null,
     "responsibilities": [
-      "Cumplir con el servicio de atención al cliente.",
-      "Participar en trabajos grupales para mejorar atención a los visitantes.",
-      "Entonar una atención amable y personalizada a los comensales."
+      "Cumplí con el servicio de atención al cliente.",
+      "Participé en trabajos grupales para mejorar atención a los visitantes.",
+      "Entoné una atención amable y personalizada a los comensales."
     ],
     "finalArgument": ""
   },
@@ -38,13 +36,13 @@
     "workTime": 6,
     "position": "Especialista en ventas del servicio de atención al cliente",
     "resumeCompany": "La Huaycha, es un destacado recreo turístico en la marguen derecha de la ciudad de Huancayo, destaca por su continua innovación y encanto natural.",
-    "logo": "ingenio",
+    "logo": "huaycha",
     "role": ["No relacionados"],
     "url": "https://web.facebook.com/la.huaycha.huancayo.recreo/?_rdc=1&_rdr",
     "responsibilities": [
-      "Me encargue de proporcionar un servicio excepcional, resolviendo inquietudes y ofreciendo orientación experta a los visitantes.",
-      "Encabece la planificación y ejecución de eventos especiales, contribuyendo a crear experiencias memorables y atrayentes para los visitantes.",
-      "Mejore mis habilidades de trabajo en equipo, participando activamente para mejorar el atractivo del recreo."
+      "Me encargué de proporcionar un servicio excepcional, resolviendo inquietudes y ofreciendo orientación experta a los visitantes.",
+      "Encabecé la planificación y ejecución de eventos especiales, contribuyendo a crear experiencias memorables y atrayentes para los visitantes.",
+      "Mejoré mis habilidades de trabajo en equipo, participando activamente para mejorar el atractivo del recreo."
     ],
     "finalArgument": "..."
   },
@@ -58,9 +56,8 @@
     "role": ["developer", "practicante", "computación"],
     "url": "...",
     "responsibilities": [
+      "Gestioné los contenidos digitales del sitio web, ademas del mantenimiento a los sistemas operativos de la organización. Y la administración del portal de transparencia de la localidad.",
       "Realicé mantenimiento y actualizaciones en la página web.",
-      "Gestioné el portal de transparencia.",
-      "Gestioné los contenidos digitales del sitio web con herramientas modernas.",
       "Participé en reuniones para evaluar la interfaz entre hardware y software."
     ],
     "finalArgument": "..."
@@ -71,12 +68,11 @@
     "workTime": 9,
     "position": "Practicante de diseño web",
     "resumeCompany": "Organización local que promueve el desarrollo sostenible de aplicaciones, ofrece servicios públicos, impulsa la participación ciudadana y conserva la identidad cultural del distrito.",
-    "logo": "Concepcion",
-    "role": ["diseñador", "practicante", "computación"],
+    "logo": "concepcion",
+    "role": ["developer", "diseñador", "practicante", "computación"],
     "url": "...",
     "responsibilities": [
-      "Realicé diseños para impresión, como folletos y tarjetas de presentación.",
-      "Me encargué de la maquetación y diseño de páginas web responsivas.",
+      "Realicé diseños para impresión, como folletos y tarjetas de presentación. Además, me encargué de la maquetación y diseño de páginas web responsivas.",
       "Realicé la edición de imágenes y el retoque fotográfico.",
       "laboré ilustraciones y gráficos personalizados"
     ],
