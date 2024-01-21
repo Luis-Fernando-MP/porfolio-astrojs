@@ -1,0 +1,47 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/defaults' as def;
+
+.experience-history {
+  @include def.gap-default-items;
+  padding: v.$padding;
+  position: relative;
+  &::after {
+    content: '';
+    width: v.$icon;
+    height: v.$icon;
+    border-radius: 50%;
+    background-image: v.$gr-2;
+    position: absolute;
+    top: v.$padding;
+    left: calc(-1 * (v.$padding + (v.$icon / 2)));
+  }
+  span {
+    color: v.$bg-normal;
+  }
+  h3 {
+    font-size: calc(v.$f-h4 + 1px);
+  }
+  p {
+    color: v.$txt-2;
+  }
+  a {
+    background-color: v.$bg-1;
+  }
+  &__images {
+    display: inline-flex;
+    gap: v.$padding;
+    div {
+      display: flex;
+    }
+    div img {
+      width: v.$icon;
+      height: v.$icon;
+      object-fit: cover;
+      border-radius: 50%;
+      &:last-child {
+        position: relative;
+        left: -10px;
+      }
+    }
+  }
+}

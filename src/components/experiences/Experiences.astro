@@ -1,0 +1,32 @@
+---
+import workExperiences from '@data/workExperiences.json'
+import Icon from '@/utils/Icon.astro'
+import { Internship } from '@icons/index'
+import { Experience } from '@components/index'
+import './styles.scss'
+import './responsiveStyle.scss'
+
+const works = workExperiences.filter(work => work.role.includes('developer'))
+---
+
+<section class='experience section hash-nav' id='experiences'>
+  <div class='experience-description'>
+    <h2>
+      Mis <b class='current-dgr'>Experiencias Formativas</b>
+    </h2>
+    <p>
+      Experimenté un hermoso crecimiento en estas instituciones y estoy
+      agradecido por cada oportunidad. Formar parte de ellas ha sido fundamental
+      para mi desarrollo. <b class='current-dgr'>
+        ¡Gracias por contribuir a mi fructífera trayectoria! 🚀
+      </b>
+    </p>
+    <a href='experiences' class='btn'>
+      <p>Mira todas mis experiencias formativas</p>
+      <Icon file={Internship} />
+    </a>
+  </div>
+  <ul class='experience-histories'>
+    {works.map(experience => <Experience history={experience} />)}
+  </ul>
+</section>

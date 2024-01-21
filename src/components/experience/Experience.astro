@@ -1,0 +1,32 @@
+---
+import type workExperiences from '@data/workExperiences.json'
+import Icon from '@/utils/Icon.astro'
+import { Eye } from '@icons/index'
+import './style.scss'
+
+interface Props {
+  history: (typeof workExperiences)[0]
+}
+
+const { date, position, url, logo, responsibilities, company } =
+  Astro.props.history
+---
+
+<li class='experience-history'>
+  <span>{date}</span>
+  <h3>{position}</h3>
+  <aside class='experience-history__images'>
+    <h4>{company}</h4>
+    <div>
+      <img src='./me.webp' />
+      <a href={url} target='_blank' rel='noopener noreferrer'>
+        <img src={`./companies/${logo}.webp`} />
+      </a>
+    </div>
+  </aside>
+  <p>{responsibilities[0]}</p>
+  <a href={`experiences/${company}`} class='btn'>
+    <p>Saber más...</p>
+    <Icon file={Eye} />
+  </a>
+</li>
