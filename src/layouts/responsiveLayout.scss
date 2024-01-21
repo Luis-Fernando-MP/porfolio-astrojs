@@ -10,17 +10,22 @@
 
 @include m.largeScreen() {
   body {
-    padding: v.$padding - 5;
+    padding: 0;
   }
   main {
     margin: 0;
     width: 100%;
     min-width: 100vw;
     position: relative;
-    height: 100vh;
   }
   .chatBot {
     right: v.$padding;
     bottom: v.$padding;
+  }
+}
+
+@include m.smallScreen() {
+  body {
+    font-size: 8.5px;
   }
 }
