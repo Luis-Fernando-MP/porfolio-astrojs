@@ -1,3 +1,4 @@
+import backgroundColors from '@data/backgroundColors.json'
 import { NAV } from './themes'
 
 const links = Array(...document.querySelectorAll('a.hash-link'))
@@ -24,6 +25,7 @@ function changeActiveNav({ id: sectionId }: HTMLElement) {
   borderLink.style.left = `${leftNavItem * indexLink}px`
   const path = window.location.pathname + `#${sectionId}`
   window.history.replaceState({}, document.title, path)
+  // document.documentElement.style.setProperty(`--${color}`, colors[color])
 }
 
 function callbackObserver(entries: IntersectionObserverEntry[]) {

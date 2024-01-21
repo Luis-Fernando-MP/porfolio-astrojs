@@ -1,7 +1,6 @@
 @use '@sass/config/variables' as v;
 @use '@sass/utils/document';
 @use '@sass/config/global';
-
 body {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,7 +24,7 @@ main {
   transition: 0.1s ease-in-out;
   width: 990px;
   margin: auto;
-  overflow: hidden;
+  padding-bottom: v.$padding;
 }
 
 main.scroll .section {

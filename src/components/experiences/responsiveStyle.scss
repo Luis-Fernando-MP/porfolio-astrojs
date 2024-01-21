@@ -1,0 +1,14 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/media' as m;
+
+@include m.smallScreen() {
+  .experience-description {
+    h2,
+    p {
+      text-align: center;
+    }
+    a {
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/defaults' as defs;
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  height: auto;
+  gap: v.$padding;
+  align-items: center;
+  padding: v.$padding * 2;
+  position: relative;
+  &::after {
+    content: '';
+    top: 0;
+    position: absolute;
+    background-color: v.$bg-2;
+    height: 100%;
+    width: 100dvw;
+    z-index: -1;
+  }
+  &-description {
+    @include defs.gap-default-items;
+    h2 {
+      font-size: v.$f-h1;
+    }
+    .btn {
+      background-color: v.$bg-1;
+    }
+  }
+  &-histories {
+    @include defs.gap-default-items(v.$padding * 2);
+    border-left: 4px solid v.$bg-1;
+    border-radius: 2px;
+    padding: v.$padding;
+  }
+}
