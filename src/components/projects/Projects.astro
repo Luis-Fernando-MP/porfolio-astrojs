@@ -1,3 +1,35 @@
+---
+import Icon from '@/utils/Icon.astro'
+import { KermitTheFrog } from '@icons/index'
+import projects from '@data/projects.json'
+---
+
 <section class='projects section hash-nav' id='projects'>
-  <h2>projects</h2>
+  <article>
+    <h2>
+      Mis <b class='current-dgr'> proyectos Personales</b>
+    </h2>
+    <p>
+      Estos proyectos reflejan de mi habilidades en la programación, quizás
+      algunos son creaciones familiares que abordo con pura pasión. Cada línea
+      de código es un testimonio de mi compromiso y amor por el arte de crear.
+      Algunos proyectos, nacidos en el crisol de la inspiración, son la
+      culminación de mi fascinante travesía de aprendizaje. <b
+        class='current-dgr'
+      >
+        este mosaico de logros y sueños! 🌟
+      </b> ¡Con orgullo, presento
+    </p>
+    <a href='/projects'>
+      <h4>Ver mas</h4>
+      <Icon file={KermitTheFrog} />
+    </a>
+  </article>
+  <ul>
+    {
+      projects.map(project => {
+        return <li>{project.title}</li>
+      })
+    }
+  </ul>
 </section>

@@ -1,4 +1,3 @@
-import backgroundColors from '@data/backgroundColors.json'
 import { NAV } from './themes'
 
 const links = Array(...document.querySelectorAll('a.hash-link'))
