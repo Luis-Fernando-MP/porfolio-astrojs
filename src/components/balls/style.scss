@@ -10,24 +10,24 @@ $backgroundBall: var(--color-ball);
   z-index: i.$balls;
   overflow: hidden;
   div {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 290px;
     background-color: $backgroundBall;
     border-radius: 50%;
     position: absolute;
     opacity: 0.6;
-    top: 30%;
+    top: 10%;
     animation: bigToSmall 2s infinite alternate;
     &:first-child {
-      top: 50%;
+      top: 30%;
     }
     @keyframes bigToSmall {
       from {
-        transform: rotateX(0px);
+        transform: rotateZ(0deg);
         filter: blur(80px);
       }
       to {
-        transform: rotateX(360px);
+        transform: rotateZ(360deg);
         filter: blur(100px);
       }
     }

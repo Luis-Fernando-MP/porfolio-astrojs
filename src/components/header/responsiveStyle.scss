@@ -3,9 +3,11 @@
 
 @include m.largeScreen() {
   header {
-    min-height: auto;
-    justify-content: start;
-    flex-direction: column-reverse;
+    min-height: 60dvh;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
     .header-personalInfo,
     .header-additional {
       width: 100%;
@@ -25,8 +27,15 @@
       aside {
         justify-content: center;
       }
+      p {
+        width: 60%;
+        text-align: center;
+      }
     }
     .header-additional {
+      &__container {
+        display: none;
+      }
       height: 20vh;
     }
     .header-me {
@@ -41,6 +50,9 @@
       h4,
       aside {
         width: 100%;
+      }
+      p {
+        width: 90%;
       }
     }
   }
