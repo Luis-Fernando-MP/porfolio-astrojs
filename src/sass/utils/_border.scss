@@ -1,9 +1,14 @@
 @use '@sass/config/variables' as v;
 
-@mixin gradientBorder($bg: v.$bg-1, $gr: v.$gr-1, $radius: v.$radius) {
+@mixin gradientBorder(
+  $bg: v.$bg-1,
+  $gr: v.$gr-1,
+  $radius: v.$radius,
+  $size: 3px
+) {
   background:
     linear-gradient($bg, $bg) padding-box,
     $gr border-box;
   border-radius: $radius;
-  border: 3px solid transparent;
+  border: $size solid transparent;
 }

@@ -1,8 +1,8 @@
 @use '@sass/config/variables' as v;
 
-@mixin gap-default-items($gap: v.$padding) {
+@mixin gap-default-items($gap: v.$padding, $ali: start, $dir: column) {
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  flex-direction: $dir;
+  align-items: $ali;
   gap: $gap;
 }

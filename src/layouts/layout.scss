@@ -9,7 +9,7 @@ body {
   -webkit-text-size-adjust: 100%;
   width: 100vw;
   height: 100vh;
-  font-family: v.$f-family;
+  font-family: v.$fm1;
   color: v.$txt-1;
   background-color: v.$bg-1;
   @extend %scroll-hidden;
@@ -33,7 +33,7 @@ main.scroll .section {
 
 .section {
   transition: 0.2s ease-in-out;
-  padding-top: v.$padding;
+  padding: v.$padding;
   width: 100%;
 }
 h1,
@@ -46,6 +46,12 @@ h1 {
 }
 h2 {
   font-weight: 800;
+}
+
+p,
+span,
+small {
+  font-family: v.$fm3;
 }
 
 h4,
@@ -72,4 +78,12 @@ small {
   right: calc((100vw - 990px) / 2);
   background-color: v.$bg-2;
   margin: v.$padding;
+}
+
+.dg {
+  color: v.$colorGr;
+}
+
+.sub-title {
+  font-size: v.$f-h1;
 }
