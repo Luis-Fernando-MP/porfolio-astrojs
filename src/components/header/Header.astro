@@ -8,9 +8,12 @@ import './responsiveStyle.scss'
 
 <header class='section hash-nav' id='main'>
   <section class='header-personalInfo'>
-    <h3>Hola 👋 mi nombre es</h3>
-    <h1>{info.name}</h1>
-    <h4>{info.experienceDetail}</h4>
+    <h4>Hola 👋 mi nombre es</h4>
+    <h1>
+      {info.name}
+      <img src='logo.webp' alt='logo' />
+    </h1>
+    <p>{info.experienceDetail}</p>
     <aside class='header-social'>
       <a
         title='GitHub'
