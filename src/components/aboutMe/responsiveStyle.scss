@@ -1,0 +1,35 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/media' as m;
+
+@include m.largeScreen() {
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    &-info {
+      width: 100%;
+    }
+    &-history {
+      text-align: center;
+    }
+    &-history,
+    &-data {
+      margin: auto;
+      width: 80%;
+    }
+  }
+}
+
+@include m.smallScreen() {
+  .about {
+    &-data,
+    &-history {
+      width: 100%;
+    }
+  }
+}

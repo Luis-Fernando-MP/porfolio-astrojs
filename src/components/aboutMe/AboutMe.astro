@@ -1,0 +1,37 @@
+---
+import './style.scss'
+import './responsiveStyle.scss'
+import me from '@data/me.json'
+---
+
+<section class='about section hash-nav' id='about'>
+  <div class='about-image'>
+    <img src='me.webp' alt={me.name} />
+  </div>
+  <div class='about-info'>
+    <h2 class='sub-title'>
+      Conoce Más<br /><b class='dg'>Acerca De Mí</b>
+    </h2>
+    {me.history.map(detail => <p class='about-history'>{detail}</p>)}
+    <article class='about-data'>
+      <div class='about-data__item'>
+        <h4>👨‍💻 Apellidos y Nombres:</h4>
+        <p>{me.lastName} {me.name}</p>
+      </div>
+      <div class='about-data__item'>
+        <h4>📧 Correo:</h4>
+        <a href={me.GMailLink} target='_blank' rel='noopener noreferrer'>
+          {me.email}
+        </a>
+      </div>
+      <div class='about-data__item'>
+        <h4>🎓 Profesión:</h4>
+        <p>{me.levels.join(', ')}</p>
+      </div>
+      <div class='about-data__item'>
+        <h4>🌎 Ubicación:</h4>
+        <p>{me.location}</p>
+      </div>
+    </article>
+  </div>
+</section>
