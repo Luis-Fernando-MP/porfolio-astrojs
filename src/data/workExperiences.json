@@ -4,7 +4,7 @@
     "date": "Jul. 2023 – 0ct. 2023",
     "workTime": 4,
     "position": "Desarrollador de aplicaciones web",
-    "resumeCompany": "Organización local que promueve el desarrollo sostenible de aplicaciones, ofrece servicios públicos, impulsa la participación ciudadana y conserva la identidad cultural del distrito.",
+    "resumeCompany": "Organización local que promueve el desarrollo sostenible de aplicaciones, ofrece servicios públicos, impulsa la participación ciudadana y conserva la identidad cultural de la empresa.",
     "logo": "AVS-CONSULTORES",
     "role": ["developer", "practicante", "Cabecilla de equipo"],
     "url": "https://avsconsultoresinformaticos.edu.pe/",
@@ -47,18 +47,17 @@
     "finalArgument": "..."
   },
   {
-    "company": "Municipalidad de cajas",
+    "company": "MUNICIPALIDAD DE SAN AGUSTÍN DE CAJAS",
     "date": "Abr. 2020 - Jul. 2021",
     "workTime": 4,
     "position": "Practicante de computación",
-    "resumeCompany": "Entidad local encargada de promover el desarrollo sostenible, brindar servicios públicos, fomentar la participación ciudadana y preservar la identidad cultural del distrito.",
+    "resumeCompany": "Organización local que busca el desarrollo integral y sostenible del distrito de San Agustín de Cajas a través de la planificación territorial, infraestructura básica, calidad ambiental, competitividad económica, gobernabilidad, participación ciudadana, seguridad ciudadana e identidad.",
     "logo": "cajas",
     "role": ["developer", "practicante", "computación"],
-    "url": "...",
+    "url": "https://www.munisanagustin.gob.pe/",
     "responsibilities": [
-      "Gestioné los contenidos digitales del sitio web, ademas del mantenimiento a los sistemas operativos de la organización. Y la administración del portal de transparencia de la localidad.",
-      "Realicé mantenimiento y actualizaciones en la página web.",
-      "Participé en reuniones para evaluar la interfaz entre hardware y software."
+      "Gestioné los contenidos digitales del sitio web, además de administrar algunos documentos e información relevante al portal de transparencia de la localidad.",
+      "Realice el mantenimiento a los sistemas operativos de la organización, además se aceptó mi propuesta, para la implementación de SO linux más livianos para las computadoras más antiguas."
     ],
     "finalArgument": "..."
   },
@@ -67,14 +66,13 @@
     "date": "Abr. 2019 - Dic. 2019",
     "workTime": 9,
     "position": "Practicante de diseño web",
-    "resumeCompany": "Organización local que promueve el desarrollo sostenible de aplicaciones, ofrece servicios públicos, impulsa la participación ciudadana y conserva la identidad cultural del distrito.",
+    "resumeCompany": "Establecida en 1997 como persona natural con negocio, destaca como un referente confiable en la industria gráfica. Consolidada como un pilar en servicios gráficos de la localidad.",
     "logo": "concepcion",
     "role": ["developer", "diseñador", "practicante", "computación"],
-    "url": "...",
+    "url": "https://pe.todosnegocios.com/gr%C3%A1fica-inmaculada-concepci%C3%B3n-955-806-691",
     "responsibilities": [
-      "Realicé diseños para impresión, como folletos y tarjetas de presentación. Además, me encargué de la maquetación y diseño de páginas web responsivas.",
-      "Realicé la edición de imágenes y el retoque fotográfico.",
-      "laboré ilustraciones y gráficos personalizados"
+      "Realicé diseños para impresión, como folletos y tarjetas de presentación. Además, me encargué de la maquetación y diseño de algunas páginas web responsivas para los clientes.",
+      "Realicé la edición de imágenes, retoque fotográfico, y elaboré ilustraciones personalizadas, empleando herramientas como Figma, WordPress y CorelDRAW."
     ],
     "finalArgument": "..."
   }
