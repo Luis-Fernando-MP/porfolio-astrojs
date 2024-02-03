@@ -1,4 +1,3 @@
-import backgroundColors from '@data/backgroundColors.json'
 import { NAV } from './themes'
 
 const links = Array(...document.querySelectorAll('a.hash-link'))
@@ -38,9 +37,7 @@ function callbackObserver(entries: IntersectionObserverEntry[]) {
 function automaticHashScroll() {
   const sections = document.querySelectorAll('.hash-nav') || []
   const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.2
+    threshold: 0.5
   }
   const observer = new IntersectionObserver(callbackObserver, options)
   sections.forEach(section => observer.observe(section))

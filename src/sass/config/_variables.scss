@@ -1,17 +1,19 @@
-$fm1: 'Lexend Variable', sans-serif;
+$fm1: 'Lexend Variable', sans-serif, 'Segoe UI Emoji';
 $fm2: 'Tourney Variable', $fm1;
 $fm3: 'Baloo Da 2 Variable', $fm1;
 
-//Gradients
-$gr-1: linear-gradient(128deg, #e5bbff 6.24%, #4476fc 82.68%);
-$gr-2: linear-gradient(143deg, #ff0844 20.17%, #ffb199 99.29%);
-$gr-3: linear-gradient(134deg, #0fd850 8.1%, #f9f047 94.37%);
-$gr-4: linear-gradient(323deg, #0acffe -0.97%, #3c4ad7 100.95%);
-$gr-5: linear-gradient(323deg, #0acffe -0.97%, #3c4ad7 100.95%);
+$gr-1: conic-gradient(
+  from 45deg at 50% 50%,
+  #a46bf8 0%,
+  #ab7ef7 10%,
+  #a46bf8 20%,
+  #5e0bd9 50%,
+  #5104d3 80%,
+  #a46bf8 100%
+);
+$colorGr: #5104d3;
 
 :root {
-  --current-dgr: #ff0844;
-  --global-family-font: 'Lexend Variable', sans-serif, 'Segoe UI Emoji';
   --global-family-size: 12px;
   --xl-font-size: 4.8em;
   --h1-font-size: 3em;
@@ -38,7 +40,6 @@ $gr-5: linear-gradient(323deg, #0acffe -0.97%, #3c4ad7 100.95%);
 }
 
 //Sass
-$f-family: var(--global-family-font);
 $f-family-size: var(--global-family-size);
 $f-xl: var(--xl-font-size);
 $f-h1: var(--h1-font-size);
@@ -67,5 +68,3 @@ $padding: 15px;
 $icon: var(--icon-size);
 $size-item: calc($icon * 3);
 $radius: 10px;
-
-$currentDgr: var(--current-dgr);

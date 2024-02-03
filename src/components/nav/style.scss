@@ -23,6 +23,7 @@ nav {
     border-radius: v.$radius;
   }
   &-theme {
+    $currentBg: var(--theme-color);
     transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     top: 80%;
     visibility: hidden;
@@ -48,11 +49,11 @@ nav {
     &__item {
       width: calc(v.$icon * 1.5);
       height: calc(v.$icon * 1.5);
-      @include b.gradientBorder($radius: 50%);
+      border-radius: 5px;
       overflow: hidden;
     }
     &__item > button {
-      background-image: var(--theme-color);
+      background-image: $currentBg;
       width: 100%;
       height: 100%;
     }

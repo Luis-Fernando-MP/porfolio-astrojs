@@ -1,0 +1,39 @@
+---
+import './style.scss'
+import './responsiveStyle.scss'
+import Icon from '@/utils/Icon.astro'
+import type { IProject } from '@components/projects/Projects.astro'
+import { Figma, GitHub, Internet } from '@icons/index'
+
+interface Props extends IProject {}
+
+const { background, description, links, title, state } = Astro.props
+---
+
+<li
+  class={`project ${state === 'terminado' ? 'finish' : 'progress'}`}
+  data-state={state}
+>
+  <div class='project-background'>
+    <img src={`./projects/${background}`} alt={title} />
+  </div>
+  <section class='project-description'>
+    <h4>{title.slice(0, 35)}...</h4>
+    <p>{description.slice(0, 70)}...</p>
+    <aside class='project-links'>
+      <a href={links.github} target='_blank' rel='noopener noreferrer'>
+        <Icon file={GitHub} />
+      </a>
+      {
+        state === 'terminado' && (
+          <a href={links.web} target='_blank' rel='noopener noreferrer'>
+            <Icon file={Internet} />
+          </a>
+        )
+      }
+      <a href={links.figma} target='_blank' rel='noopener noreferrer'>
+        <Icon file={Figma} />
+      </a>
+    </aside>
+  </section>
+</li>

@@ -1,0 +1,43 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/defaults' as defs;
+
+.projects {
+  @include defs.gap-default-items($gap: v.$padding * 2);
+  overflow: hidden;
+  &-title {
+    @include defs.gap-default-items($gap: v.$padding * 2, $dir: row);
+    width: 100%;
+    justify-content: center;
+    > div {
+      max-width: 60%;
+    }
+    h2,
+    p {
+      text-align: right;
+    }
+  }
+  &-readMore {
+    @include defs.gap-default-items($ali: center);
+    padding: v.$padding 10px;
+    border-radius: v.$radius;
+    background-image: v.$gr-1;
+    width: 110px;
+    h4 {
+      font-size: v.$f-h2;
+      color: #ffffffe4;
+      text-align: center;
+      font-family: v.$fm2;
+    }
+    div {
+      padding: 0;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  &-list {
+    @include defs.gap-default-items($ali: center, $dir: row);
+    flex-wrap: wrap;
+  }
+}

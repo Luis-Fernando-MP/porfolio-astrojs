@@ -1,0 +1,33 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/media' as m;
+
+@include m.largeScreen() {
+  .projects {
+    &-title {
+      flex-direction: column;
+      div {
+        max-width: 100%;
+      }
+      h2,
+      p {
+        text-align: center;
+      }
+    }
+    &-readMore {
+      justify-content: space-evenly;
+      width: auto;
+      margin: auto;
+      padding: 5px 10px;
+      flex-direction: row;
+      background-image: none;
+      background-color: v.$colorGr;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &-list {
+      justify-content: center;
+    }
+  }
+}

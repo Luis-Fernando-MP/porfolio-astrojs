@@ -1,3 +1,36 @@
+---
+import './style.scss'
+import './responsiveStyle.scss'
+import Icon from '@/utils/Icon.astro'
+import { KermitTheFrog } from '@icons/index'
+import projects from '@data/projects.json'
+import { Project } from '@components/index'
+
+export type IProject = (typeof projects)[0]
+---
+
 <section class='projects section hash-nav' id='projects'>
-  <h2>projects</h2>
+  <article class='projects-title'>
+    <div>
+      <h2 class='sub-title'>
+        Mis <b class='dg'> proyectos Personales</b>
+      </h2>
+      <p>
+        Estos proyectos reflejan de mi habilidades en la programación, quizás
+        algunos son creaciones familiares que abordo con pura pasión. Cada línea
+        de código es un testimonio de mi compromiso y amor por el arte de crear.
+        Algunos proyectos, nacidos en el crisol de la inspiración, son la
+        culminación de mi fascinante travesía de aprendizaje. <b class='dg'>
+          este mosaico de logros y sueños! 🌟
+        </b> ¡Con orgullo, presento
+      </p>
+    </div>
+    <a href='/projects' class='projects-readMore'>
+      <h4>Ver más</h4>
+      <Icon file={KermitTheFrog} />
+    </a>
+  </article>
+  <ul class='projects-list'>
+    {projects.map(project => <Project {...project} />)}
+  </ul>
 </section>

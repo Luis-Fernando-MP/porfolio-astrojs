@@ -2,11 +2,11 @@
   {
     "title": "Rey nocturno",
     "colors": {
-      "bg-fondo-1": "#07090E",
-      "bg-fondo-2": "#0F121A",
+      "bg-fondo-1": "#0e0a16",
+      "bg-fondo-2": "#120a1c",
       "txt-letra-1": "#D5DEFB",
       "txt-letra-2": "#A1ACCE",
-      "bg-normal": "#6680DB"
+      "bg-normal": "#8b63ff"
     }
   },
   {
@@ -16,7 +16,7 @@
       "bg-fondo-2": "#EBF5FF",
       "txt-letra-1": "#000000",
       "txt-letra-2": "#38394A",
-      "bg-normal": "#6680DB"
+      "bg-normal": "#8b63ff"
     }
   },
   {
@@ -27,6 +27,16 @@
       "txt-letra-1": "#555555",
       "txt-letra-2": "#474642",
       "bg-normal": "#817155"
+    }
+  },
+  {
+    "title": "Dios nocturno",
+    "colors": {
+      "bg-fondo-1": "#151412",
+      "bg-fondo-2": "#161615",
+      "txt-letra-1": "#fff3e0",
+      "txt-letra-2": "#a6a09a",
+      "bg-normal": "#dec395"
     }
   }
 ]

@@ -1,17 +1,17 @@
 {
-  "mora": {
-    "color1": "#4935C7",
-    "color2": "#DF61FF",
+  "moraNormal": {
+    "color1": "#35c7bf",
+    "color2": "#5115aa",
     "color3": "#0084FF"
   },
-  "green": {
-    "color1": "#E8EE47",
-    "color2": "#87E44B",
-    "color3": "#0FD850"
+  "moraHack": {
+    "color1": "#5115aa",
+    "color2": "#57ff79",
+    "color3": "#5f2ec4"
   },
-  "red": {
-    "color1": "#FF0844",
+  "moraCute": {
+    "color1": "#5115aa",
     "color2": "#FF4362",
-    "color3": "#E39786"
+    "color3": "#325aff"
   }
 }

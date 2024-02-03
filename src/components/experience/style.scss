@@ -10,10 +10,11 @@
     width: v.$icon;
     height: v.$icon;
     border-radius: 50%;
-    background-image: v.$gr-2;
+    background-image: v.$gr-1;
     position: absolute;
-    top: v.$padding;
-    left: calc(-1 * (v.$padding + (v.$icon / 2)));
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(-1.05 * (v.$padding + (v.$icon / 2)));
   }
   span {
     color: v.$bg-normal;
@@ -37,7 +38,7 @@
       width: v.$icon;
       height: v.$icon;
       object-fit: cover;
-      border-radius: 50%;
+      border-radius: 5px;
       &:last-child {
         position: relative;
         left: -10px;

@@ -7,13 +7,13 @@ export enum BallsPosition {
 
 interface Props {
   position?: BallsPosition | null
-  colors?: typeof backgroundColors.mora
+  colors?: typeof backgroundColors.moraNormal
 }
 import './style.scss'
 
 const { colors, position } = Astro.props
 
-const backgroundBalls = colors ?? backgroundColors.mora
+const backgroundBalls = colors ?? backgroundColors.moraNormal
 ---
 
 <section class={`balls ${position || BallsPosition.right}`}>

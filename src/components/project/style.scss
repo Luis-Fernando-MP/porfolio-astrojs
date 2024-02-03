@@ -1,0 +1,80 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/defaults' as defs;
+@use '@sass/utils/border' as border;
+
+.project {
+  overflow: hidden;
+  width: 450px;
+  height: 200px;
+  position: relative;
+  border-radius: v.$radius;
+  border: 2px solid v.$bg-2;
+  background-color: v.$bg-2;
+  @include defs.gap-default-items($dir: row, $gap: 0);
+  &.progress {
+    &::after {
+      color: #6d5e14;
+      background-color: #ffd815c8;
+    }
+  }
+  &.finish {
+    &::after {
+      color: #ffc3ce;
+      background-color: #ef1742e7;
+    }
+  }
+  &::after {
+    content: attr(data-state);
+    position: absolute;
+    padding: 5px 10px;
+    top: 0;
+    left: 0;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  &-background {
+    width: 200px;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-description {
+    @include defs.gap-default-items($gap: 10px);
+    width: calc(100% - 200px);
+    height: 100%;
+    padding: 5px 10px;
+    position: relative;
+    background-color: v.$bg-2;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 100%;
+      top: 0;
+      left: -20px;
+      background-image: linear-gradient(
+        90deg,
+        transparent,
+        var(--bg-fondo-2) 60%
+      );
+    }
+    h4 {
+      font-weight: 500;
+    }
+    p {
+      font-size: v.$f-span;
+    }
+  }
+  &-links {
+    @include defs.gap-default-items($dir: row);
+    justify-content: start;
+    .icon {
+      background-color: v.$bg-2;
+      padding: 10px;
+      @include border.gradientBorder($size: 1px);
+    }
+  }
+}
