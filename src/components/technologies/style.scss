@@ -1,0 +1,59 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/defaults' as defs;
+@use '@sass/utils/document' as *;
+
+.skills {
+  &,
+  &-technologies {
+    @include defs.gap-default-items($dir: row);
+  }
+  align-items: inherit;
+  justify-content: center;
+  min-height: 70vh;
+  height: auto;
+  &-filters {
+    @include defs.gap-default-items();
+    width: 65%;
+  }
+  &-technologies,
+  &-technology {
+    padding: v.$padding;
+    border-radius: v.$radius;
+  }
+  &-technologies {
+    background-color: v.$colorGr;
+    justify-content: center;
+    align-content: flex-start;
+    width: calc(100% - 60%);
+    @extend %scroll-hidden;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    height: 100%;
+    display: flex;
+    min-height: 60vh;
+    max-height: 60vh;
+  }
+  &-technology {
+    $colorSkill: var(--color-skill);
+    @include defs.gap-default-items($ali: center, $gap: 10px);
+    justify-content: center;
+    background-color: v.$bg-1;
+    width: 90px;
+    height: 110px;
+    overflow: hidden;
+    &__description {
+      display: none;
+    }
+    p {
+      display: block;
+      background-color: $colorSkill;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: v.$f-span;
+    }
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

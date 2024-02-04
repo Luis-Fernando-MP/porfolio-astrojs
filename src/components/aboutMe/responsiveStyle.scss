@@ -22,6 +22,17 @@
       margin: auto;
       width: 80%;
     }
+    &-data__item {
+      flex-direction: column;
+      h4,
+      p {
+        width: 100%;
+      }
+      p,
+      a {
+        padding-left: 10px;
+      }
+    }
   }
 }
 

@@ -59,13 +59,26 @@ a {
   }
 }
 
+.pIcon {
+  width: $icon;
+  height: $icon;
+}
+
 .btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: $padding;
-  padding: 0 $padding;
+  padding: $padding * 0.5 $padding;
   border-radius: $radius;
+  transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1.5px solid transparent;
+  div {
+    padding: 0;
+  }
+  &:hover {
+    border-color: $colorGr;
+  }
 }
 
 img,

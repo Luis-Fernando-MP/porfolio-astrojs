@@ -1,0 +1,19 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/media' as m;
+
+@include m.largeScreen() {
+  .balls {
+    div {
+      width: 200px;
+      height: 190px;
+      top: 0;
+      &:last-child,
+      &:first-child {
+        top: 10%;
+      }
+      &:first-child {
+        right: 0;
+      }
+    }
+  }
+}

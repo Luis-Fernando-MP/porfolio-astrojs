@@ -31,6 +31,6 @@ export type IProject = (typeof projects)[0]
     </a>
   </article>
   <ul class='projects-list'>
-    {projects.map(project => <Project {...project} />)}
+    {projects.map(project => <Project {...project} client:visible />)}
   </ul>
 </section>

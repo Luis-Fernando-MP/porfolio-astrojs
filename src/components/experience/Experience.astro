@@ -1,18 +1,21 @@
 ---
+import './style.scss'
+import './responsiveStyle.scss'
 import type workExperiences from '@data/workExperiences.json'
 import Icon from '@/utils/Icon.astro'
 import { Eye } from '@icons/index'
-import './style.scss'
 
 interface Props {
   history: (typeof workExperiences)[0]
+  index: number
 }
 
-const { date, position, url, logo, responsibilities, company } =
-  Astro.props.history
+const { history, index } = Astro.props
+
+const { date, position, url, logo, responsibilities, company } = history
 ---
 
-<li class='experience-history'>
+<li class='experience-history' data-index={index + 1}>
   <span>{date}</span>
   <h3>{position}</h3>
   <aside class='experience-history__images'>

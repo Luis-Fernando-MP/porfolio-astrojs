@@ -21,7 +21,7 @@
     "@fontsource-variable/lexend": "^5.0.18",
     "@fontsource-variable/tourney": "^5.0.19",
     "@formkit/auto-animate": "0.8.1",
-    "@types/react": "18.2.46",
+    "@types/react": "18.2.52",
     "@types/react-dom": "18.2.18",
     "astro": "4.1.1",
     "react": "18.2.0",

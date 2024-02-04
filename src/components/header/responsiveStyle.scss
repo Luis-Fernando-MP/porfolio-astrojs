@@ -3,11 +3,11 @@
 
 @include m.largeScreen() {
   header {
-    min-height: 60dvh;
     height: auto;
+    min-height: 50dvh;
     justify-content: center;
-    flex-direction: column;
-    margin-bottom: 20px;
+    align-items: center;
+    flex-direction: column-reverse;
     .header-personalInfo,
     .header-additional {
       width: 100%;
@@ -33,13 +33,20 @@
       }
     }
     .header-additional {
+      padding: 0;
+      padding: 20px;
+      width: auto;
+      height: auto;
+      height: 200px;
       &__container {
         display: none;
       }
-      height: 20vh;
     }
     .header-me {
       top: initial;
+      p {
+        font-size: v.$f-p;
+      }
     }
   }
 }

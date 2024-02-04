@@ -3,6 +3,7 @@ import Balls from '@components/balls/Balls.astro'
 import Layout from '@layouts/Layout.astro'
 import Header from '@components/header/Header.astro'
 import { AboutMe, Experiences, Projects } from '@components/index'
+import Technologies from '@components/technologies/Technologies'
 ---
 
 <Layout title='Porfolio: Luis Fernando'>
@@ -11,8 +12,8 @@ import { AboutMe, Experiences, Projects } from '@components/index'
   <Experiences />
   <Projects />
   <AboutMe />
+  <Technologies client:load />
   <!-- 
-  <section class='skills section'><h2>skills</h2></section>
   <section class='contact section hash-nav' id='contact'>
     <h2>contact</h2>
   </section>

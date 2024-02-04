@@ -27,9 +27,7 @@ header {
     font-family: v.$fm3;
   }
   h1 {
-    background: v.$gr-1;
-    background-clip: text;
-    color: transparent;
+    color: v.$colorGr;
     font-size: v.$f-xl;
     font-weight: 900;
     display: block;
@@ -136,7 +134,7 @@ header {
       text-overflow: ellipsis;
     }
     a {
-      font-weight: 300;
+      font-weight: 500;
       color: v.$bg-normal;
     }
   }

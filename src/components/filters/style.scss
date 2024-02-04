@@ -1,0 +1,29 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/defaults' as defs;
+
+.filters {
+  width: 100%;
+  @include defs.gap-default-items($dir: row);
+  flex-wrap: wrap;
+  &-action {
+    p {
+      font-size: v.$f-span;
+    }
+    &.active {
+      background-color: v.$colorGr;
+      p {
+        color: white;
+      }
+    }
+    &.none {
+      $bg-none: #ff3a5e;
+      background-color: rgba($bg-none, 0.2);
+      &.active {
+        outline: 2px solid $bg-none;
+        p {
+          color: v.$txt-1;
+        }
+      }
+    }
+  }
+}
