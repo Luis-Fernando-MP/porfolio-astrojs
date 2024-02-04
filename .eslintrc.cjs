@@ -14,8 +14,8 @@ module.exports = {
     'no-tabs': 'off',
     indent: ['error', 2],
     quotes: ['warn', 'single'],
-    'jsx-quotes': [2, 'prefer-single'],
     'eol-last': 'off',
+    'jsx-quotes': [2, 'prefer-single'],
     'space-before-function-paren': 'off',
     "no-undef": "off",
     "no-explicit-any": "off"
