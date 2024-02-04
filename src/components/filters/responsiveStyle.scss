@@ -1,0 +1,9 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/media' as m;
+
+@include m.largeScreen() {
+  .filters {
+    width: 100%;
+    justify-content: center;
+  }
+}
