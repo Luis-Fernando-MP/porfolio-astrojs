@@ -1,6 +1,6 @@
-import { codeIcons } from '@icons/code/'
+import codeIcons from '@data/programmingLanguages.json'
 
-type TCodeIcon = typeof codeIcons.AstroJs
+type TCodeIcon = (typeof codeIcons)[0]
 type THistory = TCodeIcon & {
   left: number
   top: number
@@ -48,7 +48,7 @@ const drawIcons = ({ src, left, animation, haveBG, color, top }: THistory) => {
   if (haveBG) iconElement.classList.add('differentIcon')
   iconElement.innerHTML = `<img src="${src}" >`
   iconElement.style.setProperty('--optional-animation', `${animation}s`)
-  iconElement.style.setProperty('--optional-background', `${color}`)
+  iconElement.style.setProperty('--optional-background', `${color}20`)
   iconElement.style.left = `${left}px`
   iconElement.style.top = `${top}%`
   additionalHeader.appendChild(iconElement)

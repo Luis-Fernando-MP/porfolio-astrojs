@@ -1,0 +1,13 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/media' as m;
+
+@include m.largeScreen() {
+  .experience-history {
+    border-top: 1.2px solid v.$colorGr;
+    &::after {
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

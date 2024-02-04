@@ -1,5 +1,12 @@
 @use '@sass/config/variables' as v;
 @use '@sass/utils/media' as m;
+@include m.largeScreen() {
+  .experience-histories {
+    border: none;
+    padding: 0;
+    padding-top: v.$padding;
+  }
+}
 
 @include m.smallScreen() {
   .experience-description {

@@ -27,6 +27,10 @@ const works = workExperiences.filter(work => work.role.includes('developer'))
     </a>
   </div>
   <ul class='experience-histories'>
-    {works.map(experience => <Experience history={experience} />)}
+    {
+      works.map((experience, i) => (
+        <Experience history={experience} index={i} />
+      ))
+    }
   </ul>
 </section>
