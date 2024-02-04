@@ -1,69 +1,72 @@
 [
   {
     "name": "AstroJs",
-    "image": "../icons/code/astroJs.webp",
+    "src": "./code/astroJs.webp",
     "state": "Aprendiendo",
+    "color": "#E33A91",
     "rel": ["Desarrollo frontend"]
   },
   {
     "name": "CSS",
-    "image": "../icons/code/css.webp",
-    "state": "Intermedio",
-    "rel": [
-      "Lenguajes de programación",
-      "Desarrollo backend",
-      "Herramientas de desarrollo",
-      "Desarrollo frontend",
-      "Base de datos",
-      "Otros"
-    ]
-  },
-  {
-    "name": "Docker",
-    "image": "../icons/code/docker.webp",
-    "state": "Aprendiendo",
-    "rel": ["Herramientas de desarrollo"]
-  },
-  {
-    "name": "Figma",
-    "image": "../icons/code/figma.webp",
-    "state": "Intermedio",
-    "rel": ["Herramientas de desarrollo"]
-  },
-  {
-    "name": "Git",
-    "image": "../icons/code/git.webp",
-    "state": "Aprendiendo",
-    "rel": ["Herramientas de desarrollo", "Otros"]
-  },
-  {
-    "name": "GitHub",
-    "image": "../icons/code/github.webp",
-    "state": "Intermedio",
-    "rel": ["Herramientas de desarrollo", "Otros"]
-  },
-  {
-    "name": "GraphQl",
-    "image": "../icons/code/graphql.webp",
-    "state": "Aprendiendo",
-    "rel": ["Desarrollo backend"]
-  },
-  {
-    "name": "Html",
-    "image": "../icons/code/html.webp",
+    "src": "./code/css.webp",
+    "color": "#285EED",
     "state": "Intermedio",
     "rel": ["Desarrollo frontend"]
   },
   {
-    "name": "Java",
-    "image": "../icons/code/java.webp",
+    "name": "Docker",
+    "src": "./code/docker.webp",
     "state": "Aprendiendo",
+    "color": "#099CEC",
+    "rel": ["Herramientas de desarrollo"]
+  },
+  {
+    "name": "Figma",
+    "src": "./code/figma.webp",
+    "state": "Intermedio",
+    "color": "#F041FF",
+    "rel": ["Herramientas de desarrollo"]
+  },
+  {
+    "name": "Git",
+    "src": "./code/git.webp",
+    "state": "Aprendiendo",
+    "color": "#F05033",
+    "rel": ["Herramientas de desarrollo", "Otros"]
+  },
+  {
+    "name": "GitHub",
+    "src": "./code/github.webp",
+    "state": "Intermedio",
+    "color": "#343336",
+    "rel": ["Herramientas de desarrollo", "Otros"]
+  },
+  {
+    "name": "GraphQl",
+    "src": "./code/graphql.webp",
+    "state": "Aprendiendo",
+    "color": "#E535AB",
+    "rel": ["Desarrollo backend"]
+  },
+  {
+    "name": "Html",
+    "src": "./code/html.webp",
+    "state": "Intermedio",
+    "color": "#E44D26",
+    "rel": ["Desarrollo frontend"]
+  },
+  {
+    "name": "Java",
+    "src": "./code/java.webp",
+    "state": "Aprendiendo",
+    "color": "#73A1FB",
     "rel": ["Desarrollo frontend", "Lenguajes de programación"]
   },
   {
     "name": "JavaScript",
-    "image": "../icons/code/javascript.webp",
+    "src": "./code/javascript.webp",
     "state": "Intermedio",
+    "color": "#F0DB4F",
     "rel": [
       "Desarrollo backend",
       "Desarrollo frontend",
@@ -72,98 +75,128 @@
   },
   {
     "name": "Linux",
-    "image": "../icons/code/linux.webp",
+    "src": "./code/linux.webp",
     "state": "Aprendiendo",
+    "color": "#F0BA1E",
     "rel": ["Herramientas de desarrollo", "Otros"]
   },
   {
     "name": "MySql",
-    "image": "../icons/code/mysql.webp",
+    "src": "./code/mysql.webp",
     "state": "Intermedio",
+    "color": "#21748E",
     "rel": ["Base de datos"]
   },
   {
-    "name": "NestJs",
-    "image": "../icons/code/nestJs.webp",
+    "name": "NextJs",
+    "src": "./code/nextJs.webp",
     "state": "Intermedio",
+    "color": "#000000",
+    "rel": ["Desarrollo frontend"]
+  },
+  {
+    "name": "NestJs",
+    "src": "./code/nestJs.webp",
+    "state": "Intermedio",
+    "color": "#3C3C3C",
     "rel": ["Desarrollo backend"]
   },
   {
     "name": "NodeJs",
-    "image": "../icons/code/nodeJs.webp",
+    "src": "./code/nodeJs.webp",
     "state": "Intermedio",
+    "color": "#539E43",
     "rel": ["Desarrollo backend", "Desarrollo frontend"]
   },
   {
     "name": "postgreSQL",
-    "image": "../icons/code/postgreSQL.webp",
+    "src": "./code/postgreSQL.webp",
     "state": "Aprendiendo",
+    "color": "#2D74AD",
     "rel": ["Base de datos"]
   },
   {
+    "name": "postman",
+    "src": "./code/postman.webp",
+    "state": "Intermedio",
+    "color": "#EE6D3F",
+    "rel": ["Herramientas de desarrollo"]
+  },
+  {
     "name": "Python",
-    "image": "../icons/code/python.webp",
+    "src": "./code/python.webp",
     "state": "Aprendiendo",
+    "color": "#FFDF5B",
     "rel": ["Desarrollo frontend", "Lenguajes de programación"]
   },
   {
     "name": "ReactJs",
-    "image": "../icons/code/react.webp",
+    "src": "./code/react.webp",
     "state": "Intermedio",
+    "color": "#5FD4F5",
     "rel": ["Desarrollo frontend"]
   },
   {
     "name": "Redis",
-    "image": "../icons/code/redis.webp",
+    "src": "./code/redis.webp",
     "state": "Aprendiendo",
+    "color": "#C6302B",
     "rel": ["Desarrollo backend"]
   },
   {
     "name": "Sass",
-    "image": "../icons/code/sass.webp",
+    "src": "./code/sass.webp",
     "state": "Intermedio",
+    "color": "#CD669A",
     "rel": ["Desarrollo frontend"]
   },
   {
     "name": "Scrum",
-    "image": "../icons/code/scrum.webp",
+    "src": "./code/scrum.webp",
     "state": "Aprendiendo",
+    "color": "#1B849A",
     "rel": ["Otros"]
   },
   {
     "name": "Tailwind",
-    "image": "../icons/code/tailwind.webp",
+    "src": "./code/tailwind.webp",
     "state": "Aprendiendo",
+    "color": "#007ACC",
     "rel": ["Desarrollo frontend"]
   },
   {
     "name": "TypeORM",
-    "image": "../icons/code/typeorm.webp",
+    "src": "./code/typeorm.webp",
     "state": "Intermedio",
+    "color": "#FE0200",
     "rel": ["Desarrollo backend"]
   },
   {
     "name": "TypeScript",
-    "image": "../icons/code/typescript.webp",
+    "src": "./code/typescript.webp",
     "state": "Intermedio",
+    "color": "#007ACC",
     "rel": ["Desarrollo backend", "Lenguajes de programación"]
   },
   {
     "name": "Vite",
-    "image": "../icons/code/vite.webp",
+    "src": "./code/vite.webp",
     "state": "Intermedio",
+    "color": "#BD34FE",
     "rel": ["Herramientas de desarrollo"]
   },
   {
     "name": "ViteTest",
-    "image": "../icons/code/viteTest.webp",
+    "src": "./code/viteTest.webp",
     "state": "Aprendiendo",
+    "color": "#729B1B",
     "rel": ["Herramientas de desarrollo"]
   },
   {
     "name": "VsCode",
-    "image": "../icons/code/vscode.webp",
+    "src": "./code/vscode.webp",
     "state": "Intermedio",
+    "color": "#42ABF2",
     "rel": ["Herramientas de desarrollo"]
   }
 ]
