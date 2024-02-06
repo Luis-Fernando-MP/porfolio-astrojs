@@ -1,22 +1,6 @@
 @use '@sass/config/variables' as v;
 @use '@sass/utils/document';
 @use '@sass/config/global';
-body {
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  width: 100vw;
-  height: 100vh;
-  font-family: v.$fm1;
-  color: v.$txt-1;
-  background-color: v.$bg-1;
-  @extend %scroll-hidden;
-  font-size: v.$f-family-size;
-  overflow: hidden auto;
-  padding: v.$padding;
-}
 
 main {
   min-height: 100vh;
@@ -36,41 +20,6 @@ main.scroll .section {
   padding: v.$padding;
   width: 100%;
 }
-h1,
-h2,
-h3 {
-  color: v.$txt-1;
-}
-h1 {
-  font-weight: 900;
-}
-h2 {
-  font-weight: 800;
-}
-
-p,
-span,
-small {
-  font-family: v.$fm3;
-}
-
-h4,
-p,
-a,
-span,
-small {
-  color: v.$txt-2;
-}
-h4 {
-  font-weight: 400;
-}
-p {
-  font-weight: 300;
-}
-span,
-small {
-  font-weight: 200;
-}
 
 .chatBot {
   position: fixed;
@@ -78,12 +27,4 @@ small {
   right: calc((100vw - 990px) / 2);
   background-color: v.$bg-2;
   margin: v.$padding;
-}
-
-.dg {
-  color: v.$colorGr;
-}
-
-.sub-title {
-  font-size: v.$f-h1;
 }

@@ -23,7 +23,12 @@ const Project: FC<TProject> = (props): JSX.Element => {
       data-state={state}
     >
       <div className='project-background'>
-        <img src={`./projects/${background}`} alt={title} />
+        <img
+          src={`./projects/${background}`}
+          alt={title}
+          loading='lazy'
+          decoding='async'
+        />
       </div>
       <section className='project-description'>
         <h4>{title.slice(0, 35)}...</h4>
@@ -39,7 +44,12 @@ const Project: FC<TProject> = (props): JSX.Element => {
                 rel='noopener noreferrer'
               >
                 <div className='icon'>
-                  <img src={iconLinks[name].src} alt={name} />
+                  <img
+                    src={iconLinks[name].src}
+                    alt={name}
+                    loading='lazy'
+                    decoding='async'
+                  />
                 </div>
               </a>
             ))}

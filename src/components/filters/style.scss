@@ -15,15 +15,5 @@
         color: white;
       }
     }
-    &.none {
-      $bg-none: #ff3a5e;
-      background-color: rgba($bg-none, 0.2);
-      &.active {
-        outline: 2px solid $bg-none;
-        p {
-          color: v.$txt-1;
-        }
-      }
-    }
   }
 }

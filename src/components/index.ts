@@ -5,7 +5,10 @@ import Project from './project/Project.tsx'
 import Experience from './experience/Experience.astro'
 import AboutMe from './aboutMe/AboutMe.astro'
 import Filters from './filters/Filters.tsx'
-// import Technologies from './technologies/Technologies.tsx'
+import Contact from './contact/Contact.astro'
+import Social from './social/Social.astro'
+import Technologies from './technologies/Technologies.tsx'
+import Footer from './footer/Footer.astro'
 
 export {
   Experiences,
@@ -14,6 +17,9 @@ export {
   Experience,
   Project,
   AboutMe,
-  Filters
-  // Technologies
+  Filters,
+  Contact,
+  Social,
+  Technologies,
+  Footer
 }

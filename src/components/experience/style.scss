@@ -2,7 +2,7 @@
 @use '@sass/utils/defaults' as def;
 
 .experience-history {
-  @include def.gap-default-items;
+  @include def.gap-default-items($ali: flex-start);
   padding: v.$padding;
   position: relative;
   $sizeBall: 30px;

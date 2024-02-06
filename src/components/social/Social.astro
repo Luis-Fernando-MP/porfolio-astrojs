@@ -1,0 +1,53 @@
+---
+import info from '@data/me.json'
+import { GitHub, Gmail, LinkedIn, WhatsApp } from '@icons/index'
+import './style.scss'
+import './responsiveStyle.scss'
+
+interface Props {
+  showTitle?: boolean
+}
+
+const { showTitle } = Astro.props
+const socialLink = [
+  {
+    icon: GitHub,
+    title: 'GitHub',
+    link: info.githubLink
+  },
+  {
+    icon: Gmail,
+    title: 'Gmail',
+    link: info.GMailLink
+  },
+  {
+    icon: LinkedIn,
+    title: 'LinkedIn',
+    link: info.linkedInLink
+  },
+  {
+    icon: WhatsApp,
+    title: 'WhatsApp',
+    link: info.whatsAppLink
+  }
+]
+---
+
+<aside class='social'>
+  {
+    socialLink.map(({ icon, link, title }) => {
+      return (
+        <a title={title} target='_blank' rel='noopener noreferrer' href={link}>
+          <img
+            src={icon.src}
+            alt={title}
+            class='pIcon'
+            loading='lazy'
+            decoding='async'
+          />
+          {showTitle && <span>{title}</span>}
+        </a>
+      )
+    })
+  }
+</aside>

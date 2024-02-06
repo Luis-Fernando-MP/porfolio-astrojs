@@ -46,7 +46,7 @@ const drawIcons = ({ src, left, animation, haveBG, color, top }: THistory) => {
   const iconElement = document.createElement('li')
   iconElement.classList.add('header-additional__icon')
   if (haveBG) iconElement.classList.add('differentIcon')
-  iconElement.innerHTML = `<img src="${src}" >`
+  iconElement.innerHTML = `<img src="${src}" loading="lazy" decoding="async">`
   iconElement.style.setProperty('--optional-animation', `${animation}s`)
   iconElement.style.setProperty('--optional-background', `${color}20`)
   iconElement.style.left = `${left}px`

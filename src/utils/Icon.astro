@@ -8,4 +8,4 @@ interface Props {
 const { file } = Astro.props
 ---
 
-<div class='icon'><img src={file.src} /></div>
+<div class='icon'><img src={file.src} loading='lazy' decoding='async' /></div>

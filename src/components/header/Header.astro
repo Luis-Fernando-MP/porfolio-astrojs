@@ -1,9 +1,8 @@
 ---
 import info from '@data/me.json'
-import Icon from '@/utils/Icon.astro'
-import { GitHub, Gmail, LinkedIn, WhatsApp } from '@icons/index'
 import './style.scss'
 import './responsiveStyle.scss'
+import { Social } from '@components/index'
 ---
 
 <header class='section hash-nav' id='main'>
@@ -11,38 +10,12 @@ import './responsiveStyle.scss'
     <h4>Hola 👋 mi nombre es</h4>
     <h1>{info.name}</h1>
     <p>{info.experienceDetail}</p>
-    <aside class='header-social'>
-      <a
-        title='GitHub'
-        target='_blank'
-        rel='noopener noreferrer'
-        href={info.githubLink}
-      >
-        <Icon file={GitHub} />
-      </a>
-      <a
-        title='LinkedIn'
-        target='_blank'
-        rel='noopener noreferrer'
-        href={info.linkedInLink}><Icon file={LinkedIn} /></a
-      ><a
-        title='GMail'
-        target='_blank'
-        rel='noopener noreferrer'
-        href={info.GMailLink}><Icon file={Gmail} /></a
-      >
-      <a
-        title='WhatsApp'
-        target='_blank'
-        rel='noopener noreferrer'
-        href={info.whatsAppLink}><Icon file={WhatsApp} /></a
-      >
-    </aside>
+    <Social />
   </section>
   <section class='header-additional'>
     <aside class='header-me'>
       <div class='header-me__image'>
-        <img src='/me.webp' alt={info.name} />
+        <img src='/me.webp' alt={info.name} loading='lazy' decoding='async' />
         <div class='header-me__text'>
           <h4>{`${info.name} ${info.lastName}`}</h4>
           <a

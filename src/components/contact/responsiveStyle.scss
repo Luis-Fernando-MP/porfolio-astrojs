@@ -1,0 +1,17 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/media' as m;
+
+@include m.mediumScreen() {
+  .contact {
+    &-container {
+      width: 100%;
+    }
+    &-message {
+      flex-direction: column;
+    }
+    &-social,
+    &-form {
+      width: 100%;
+    }
+  }
+}

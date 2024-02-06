@@ -34,12 +34,3 @@ import Nav from '@components/nav/Nav.astro'
     <aside class='chatBot'><h2>chatBot</h2></aside>
   </body>
 </html>
-<script>
-  const { body, documentElement } = document
-  document?.addEventListener('scroll', () => {
-    const nav = body.querySelector('nav')
-    if (!nav || !(nav instanceof HTMLElement)) return
-    if (documentElement.scrollTop > 150) return nav.classList.add('active')
-    nav?.classList.remove('active')
-  })
-</script>
