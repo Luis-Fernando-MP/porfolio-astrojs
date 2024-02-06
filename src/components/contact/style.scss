@@ -1,0 +1,134 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/defaults' as defs;
+
+.contact {
+  min-height: 60dvh;
+  height: auto;
+  &-container {
+    @include defs.gap-default-items();
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    border-radius: v.$radius;
+    padding: v.$padding;
+    background-color: v.$bg-2;
+  }
+  .btn {
+    background-image: v.$gr-2;
+    width: 100%;
+    color: v.$colorGr2;
+    font-weight: 600;
+  }
+  &-message {
+    @include defs.gap-default-items($dir: row);
+  }
+  &-social,
+  &-form {
+    width: 50%;
+  }
+  &-social {
+    &,
+    &__info {
+      @include defs.gap-default-items($ali: center);
+      justify-content: center;
+    }
+    &__info {
+      background-image: v.$gr-2;
+      border-radius: v.$radius;
+      width: 100%;
+      min-height: 230px;
+      height: 100%;
+      padding: v.$padding;
+      position: relative;
+      overflow: hidden;
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+      }
+      &::after {
+        background-image: linear-gradient(
+          67deg,
+          transparent 20%,
+          rgba(v.$colorGr2, 0.1) 30%,
+          v.$colorGr2
+        );
+
+        top: 30%;
+        left: 90%;
+        width: 300px;
+        height: 300px;
+      }
+      &::before {
+        background-image: linear-gradient(
+          45deg,
+          transparent 20%,
+          rgba(v.$colorGr2, 0.35) 80%,
+          v.$colorGr2
+        );
+        top: 70%;
+        left: 40%;
+        width: 50px;
+        height: 50px;
+      }
+      h3,
+      p {
+        z-index: 1;
+        position: relative;
+        color: v.$colorGr2;
+        text-align: center;
+      }
+    }
+  }
+  &-form {
+    @include defs.gap-default-items($ali: center);
+    justify-content: center;
+    padding: v.$padding;
+    border-radius: v.$radius;
+    outline: 1.5px solid transparent;
+    &.invalidate {
+      outline-color: v.$bg-error;
+      .contact-validate {
+        opacity: 1;
+        top: 0;
+      }
+    }
+    &.valid {
+      outline-color: v.$bg-check;
+    }
+    &__field {
+      @include defs.gap-default-items($dir: row, $gap: 0);
+      justify-content: space-around;
+      width: 100%;
+      background-color: v.$bg-1;
+      border-radius: v.$radius;
+      padding-left: 15px;
+      @include defs.hover;
+      input,
+      textarea {
+        width: 100%;
+      }
+      textarea {
+        padding-top: 15px;
+      }
+    }
+  }
+  &-validate {
+    // transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    position: relative;
+    // top: -20px;
+    width: 100%;
+    opacity: 0;
+    border-radius: v.$radius;
+    height: 250px;
+    &,
+    p {
+      padding: v.$padding;
+    }
+    p {
+      font-size: v.$f-span;
+    }
+  }
+}

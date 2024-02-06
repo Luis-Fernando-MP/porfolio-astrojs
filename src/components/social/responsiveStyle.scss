@@ -1,0 +1,8 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/media' as m;
+
+@include m.largeScreen() {
+  .social {
+    width: 100%;
+  }
+}
