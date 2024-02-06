@@ -20,7 +20,7 @@ header {
 .header-personalInfo {
   @include defs.gap-default-items;
   justify-content: center;
-  img {
+  > img {
     width: 40px;
   }
   h4 {
@@ -32,18 +32,6 @@ header {
     font-weight: 900;
     display: block;
     width: 100%;
-  }
-  aside {
-    @include defs.gap-default-items($dir: row);
-    width: 100%;
-    div {
-      padding: 10px;
-      border-radius: v.$radius;
-      background-color: v.$bg-2;
-    }
-    img {
-      width: auto;
-    }
   }
 }
 

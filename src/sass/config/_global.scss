@@ -1,4 +1,5 @@
 @use '@sass/config/variables' as *;
+@use '@sass/utils/defaults' as defs;
 @use '@sass/utils/document';
 
 *,
@@ -8,6 +9,23 @@
   padding: 0;
   margin: 0;
   outline: none;
+}
+
+body {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  width: 100vw;
+  height: 100vh;
+  font-family: $fm1;
+  color: $txt-1;
+  background-color: $bg-1;
+  @extend %scroll-hidden;
+  font-size: $f-family-size;
+  overflow: hidden auto;
+  padding: $padding;
 }
 
 html {
@@ -33,13 +51,62 @@ $listOfFontsSize: (
 
 h1,
 h2,
+h3 {
+  color: $txt-1;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+p,
+span,
+small,
+input,
+textarea {
+  font-family: $fm3;
+}
+
+h4,
+p,
+a,
+span,
+small,
+input,
+textarea {
+  color: $txt-2;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+span,
+small {
+  font-weight: 200;
+}
+
+h1,
+h2,
 h3,
 h4 {
   text-wrap: balance;
 }
 
+input,
+textarea,
 p {
+  font-weight: 300;
   text-wrap: pretty;
+}
+
+textarea {
+  resize: none;
+  @extend %scroll-hidden;
 }
 
 ul {
@@ -48,6 +115,25 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+img,
+svg {
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  background: none;
+  border: none;
 }
 
 .icon {
@@ -71,25 +157,26 @@ a {
   gap: $padding;
   padding: $padding * 0.5 $padding;
   border-radius: $radius;
-  transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  border: 1.5px solid transparent;
   div {
     padding: 0;
   }
-  &:hover {
-    border-color: $colorGr;
+  @include defs.hover;
+}
+
+.dg {
+  color: $colorGr;
+}
+
+.sub-title {
+  font-size: $f-h1;
+}
+
+.error {
+  background-color: rgba($bg-error, 0.2) !important;
+  &.active {
+    outline: 2px solid $bg-error;
+    p {
+      color: $txt-1;
+    }
   }
-}
-
-img,
-svg {
-  object-fit: contain;
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
-button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
 }

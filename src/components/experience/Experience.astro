@@ -21,9 +21,9 @@ const { date, position, url, logo, responsibilities, company } = history
   <aside class='experience-history__images'>
     <h4>{company}</h4>
     <div>
-      <img src='./me.webp' />
+      <img src='./me.webp' loading='lazy' decoding='async' />
       <a href={url} target='_blank' rel='noopener noreferrer'>
-        <img src={`./companies/${logo}.webp`} />
+        <img src={`./companies/${logo}.webp`} loading='lazy' decoding='async' />
       </a>
     </div>
   </aside>

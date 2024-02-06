@@ -11,7 +11,11 @@ $gr-1: conic-gradient(
   #5104d3 80%,
   #a46bf8 100%
 );
+$gr-2: linear-gradient(45deg, #5104d3 0%, #7526ec 50%, #9e43ff 100%);
 $colorGr: #5104d3;
+$colorGr2: #e7d1ff;
+$bg-error: #ff3a5e;
+$bg-check: #00a671;
 
 :root {
   --global-family-size: 12px;

@@ -16,7 +16,7 @@
     z-index: -1;
   }
   &-description {
-    @include defs.gap-default-items;
+    @include defs.gap-default-items($ali: flex-start);
     .btn {
       background-color: v.$bg-1;
     }

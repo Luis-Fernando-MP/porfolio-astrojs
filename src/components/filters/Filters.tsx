@@ -42,7 +42,7 @@ const Filters: FC<TFilters> = ({
     <ul className='filters'>
       <li className='filters-item'>
         <button
-          className={`filters-action none ${
+          className={`filters-action error ${
             activeFilter === 'all' && 'active'
           } btn`}
           onClick={() => handleFilter('all')}
@@ -51,6 +51,8 @@ const Filters: FC<TFilters> = ({
             src={LowIndicatorFilter.src}
             alt='no filters'
             className='pIcon'
+            loading='lazy'
+            decoding='async'
           />
           <p>Sin filtros</p>
         </button>
@@ -63,7 +65,13 @@ const Filters: FC<TFilters> = ({
             } btn`}
             onClick={() => handleFilter(name)}
           >
-            <img src={icon.src} alt={name} className='pIcon' />
+            <img
+              src={icon.src}
+              alt={name}
+              className='pIcon'
+              loading='lazy'
+              decoding='async'
+            />
             <p>{name}</p>
           </button>
         </li>

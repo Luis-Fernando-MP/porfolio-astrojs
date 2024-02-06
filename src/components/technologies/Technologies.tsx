@@ -80,7 +80,7 @@ const Technologies = (): JSX.Element => {
               style={itemStyle}
             >
               <p>{name}</p>
-              <img src={src} alt={name} />
+              <img src={src} alt={name} loading='lazy' decoding='async' />
               <div className='skills-technology__description'>
                 <span>{name}</span>
                 <p>{state}</p>
