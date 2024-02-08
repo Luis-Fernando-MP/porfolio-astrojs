@@ -1,0 +1,18 @@
+---
+import Balls, { BallsPosition } from '@components/balls/Balls.astro'
+import Layout from '@layouts/Layout.astro'
+import { Footer, Themes } from '@components/index'
+import FilterBlock from '@components/filterBlock/FilterBlock'
+import './style.scss'
+import ProjectsBlock from './ProjectsBlock'
+---
+
+<Layout title='Porfolio: mis proyectos'>
+  <Balls slot='balls' position={BallsPosition.left} />
+  <nav class='nav'>
+    <Themes />
+    <a href='/' class='bg1 active'> ⟻ &nbsp;Regresar</a>
+  </nav>
+  <ProjectsBlock client:load />
+  <Footer />
+</Layout>

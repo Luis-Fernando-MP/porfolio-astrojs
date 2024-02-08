@@ -1,10 +1,10 @@
 import './style.scss'
 import './responsiveStyle.scss'
-import type { IProject } from '@components/projects/Projects.astro'
 import { Figma, GitHub, Internet } from '@icons/index'
 import type { JSX, FC, ReactNode } from 'react'
+import type { IProjectBlock } from '@pages/projects/ProjectsBlock'
 
-interface TProject extends IProject {
+interface TProject extends IProjectBlock {
   children?: ReactNode[]
 }
 

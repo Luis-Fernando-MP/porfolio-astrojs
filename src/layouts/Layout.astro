@@ -11,8 +11,6 @@ import '@fontsource-variable/lexend'
 
 import './layout.scss'
 import './responsiveLayout.scss'
-
-import Nav from '@components/nav/Nav.astro'
 ---
 
 <!doctype html>
@@ -28,7 +26,6 @@ import Nav from '@components/nav/Nav.astro'
   <body>
     <slot name='balls' />
     <main>
-      <Nav />
       <slot />
     </main>
     <aside class='chatBot'>
@@ -56,3 +53,19 @@ import Nav from '@components/nav/Nav.astro'
     </aside>
   </body>
 </html>
+<script>
+  const { body, documentElement } = document
+  const nav = document.querySelector('nav')
+  const main = nav?.parentNode as HTMLElement
+  document?.addEventListener('scroll', () => {
+    const nav = body.querySelector('nav')
+    if (!nav || !(nav instanceof HTMLElement)) return
+    if (documentElement.scrollTop > 150) return nav.classList.add('active')
+    nav?.classList.remove('active')
+  })
+  document.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop
+    if (scrollPosition > 50) return main?.classList.add('scroll')
+    main?.classList.remove('scroll')
+  })
+</script>

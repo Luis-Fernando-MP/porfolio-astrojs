@@ -6,7 +6,7 @@ import type { ImageMetadata } from 'astro'
 import { type JSX, type FC, type ReactNode, useState } from 'react'
 import { LowIndicatorFilter } from '@icons/index'
 
-type TFilter = {
+export type TFilter = {
   icon: ImageMetadata
   name: string
 }

@@ -1,17 +1,6 @@
-import { NAV } from './themes'
-
-const { body, documentElement } = document
-document?.addEventListener('scroll', () => {
-  const nav = body.querySelector('nav')
-  if (!nav || !(nav instanceof HTMLElement)) return
-  if (documentElement.scrollTop > 150) return nav.classList.add('active')
-  nav?.classList.remove('active')
-})
-
 const links = Array(...document.querySelectorAll('a.hash-link'))
 const linksContainer = document.querySelector('ul#nav-links-container')
 const borderLink = linksContainer?.querySelector('div.nav-border')
-const main = NAV?.parentNode as HTMLElement
 
 const getSizeIcon = () =>
   getComputedStyle(document.body)
@@ -63,10 +52,3 @@ function handleMediaQueryChange() {
   automaticHashScroll()
 }
 mediaQuery.addEventListener('change', handleMediaQueryChange)
-
-// Nav style
-document.addEventListener('scroll', () => {
-  const scrollPosition = window.scrollY || document.documentElement.scrollTop
-  if (scrollPosition > 50) return main?.classList.add('scroll')
-  main?.classList.remove('scroll')
-})

@@ -1,18 +1,20 @@
 ---
 import Balls from '@components/balls/Balls.astro'
 import Layout from '@layouts/Layout.astro'
-import Header from '@components/header/Header.astro'
 import {
   AboutMe,
   Contact,
   Experiences,
   Footer,
   Projects,
-  Technologies
+  Technologies,
+  Header,
+  Nav
 } from '@components/index'
 ---
 
 <Layout title='Porfolio: Luis Fernando'>
+  <Nav />
   <Balls slot='balls' />
   <Header />
   <Experiences />

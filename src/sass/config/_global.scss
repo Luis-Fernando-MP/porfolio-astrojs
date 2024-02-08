@@ -171,12 +171,20 @@ textarea {
   font-size: $f-h1;
 }
 
-.error {
-  background-color: rgba($bg-error, 0.2) !important;
-  &.active {
-    outline: 2px solid $bg-error;
+$listSecondColors: (
+  'error': $bg-error,
+  'check': $bg-check,
+  'bg1': $colorGr
+);
+
+@each $tag, $value in $listSecondColors {
+  .#{$tag} {
+    background-color: rgba($value, 0.2) !important;
     p {
       color: $txt-1;
+    }
+    &.active {
+      outline: 2px solid $value;
     }
   }
 }

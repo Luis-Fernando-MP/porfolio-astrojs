@@ -9,8 +9,13 @@ import Contact from './contact/Contact.astro'
 import Social from './social/Social.astro'
 import Technologies from './technologies/Technologies.tsx'
 import Footer from './footer/Footer.astro'
+import Nav from './nav/Nav.astro'
+import Themes from './themes/Themes.astro'
+import Suggestion from './suggestion/Suggestion.tsx'
 
 export {
+  Themes,
+  Nav,
   Experiences,
   Header,
   Projects,
@@ -21,5 +26,6 @@ export {
   Contact,
   Social,
   Technologies,
-  Footer
+  Footer,
+  Suggestion
 }
