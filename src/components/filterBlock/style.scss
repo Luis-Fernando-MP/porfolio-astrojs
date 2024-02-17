@@ -1,0 +1,73 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/defaults' as defs;
+
+$suggestion-listContainer: 'div#react-autowhatever-1';
+$suggestion-container: "div[aria-owns='react-autowhatever-1']";
+
+.filterBlock {
+  @include defs.gap-default-items($ali: center);
+  align-items: center;
+  &-form,
+  #{$suggestion-container} {
+    @include defs.gap-default-items();
+    width: 100%;
+    padding: v.$padding 0;
+  }
+  &-filters {
+    margin: auto;
+    .filters {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    ul.filters li button.btn {
+      width: 100%;
+      padding: v.$padding;
+    }
+  }
+  #{$suggestion-container} {
+    div ul[role='listbox'] {
+      background-color: v.$bg-2;
+      border-radius: v.$radius;
+      max-height: 50vh;
+      height: auto;
+      @include defs.gap-default-items($dir: row);
+      flex-wrap: wrap;
+      padding: v.$padding;
+    }
+    input {
+      width: 100%;
+      padding: v.$padding;
+      border-radius: v.$radius;
+      background-color: v.$bg-2;
+      &:focus {
+        outline-color: v.$colorGr;
+      }
+      @include defs.hover;
+    }
+  }
+  &-data {
+    @include defs.gap-default-items($dir: row);
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  }
+  &-nothing {
+    @include defs.gap-default-items($ali: center, $gap: 0);
+    justify-content: center;
+    h4 {
+      color: white;
+      text-align: center;
+      width: 80%;
+      background-color: v.$colorGr;
+      padding: v.$padding;
+      border-top-left-radius: v.$radius;
+      border-top-right-radius: v.$radius;
+    }
+    img {
+      width: 80%;
+      border-bottom-left-radius: v.$radius;
+      border-bottom-right-radius: v.$radius;
+    }
+  }
+}

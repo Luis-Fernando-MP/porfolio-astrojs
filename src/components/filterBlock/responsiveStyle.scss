@@ -1,0 +1,7 @@
+@use '@sass/utils/media' as m;
+
+@include m.smallScreen() {
+  .filterBlock-filters .filters {
+    grid-template-columns: 1fr;
+  }
+}

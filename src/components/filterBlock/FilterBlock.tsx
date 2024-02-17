@@ -2,10 +2,10 @@ import type { TFilter } from '@components/filters/Filters'
 import type { IProjectBlock } from '@pages/projects/ProjectsBlock'
 import Autosuggest from 'react-autosuggest'
 import { useState, type JSX, type ReactNode, type FC } from 'react'
-import { useAutoAnimate } from '@formkit/auto-animate/react'
 import { randomID } from '@/utils/randomID'
 import { Filters, Suggestion } from '@components/index'
 import './style.scss'
+import './responsiveStyle.scss'
 
 import workExperiences from '@data/workExperiences.json'
 type temporal = (typeof workExperiences)[0]
@@ -29,11 +29,14 @@ const FilterBlock: FC<TFilterBlock> = ({
   publicName,
   RenderItemComponent
 }): JSX.Element => {
-  const [parent] = useAutoAnimate()
   const [inputValue, setInputValue] = useState('')
   const [data, setData] = useState(dataBlock)
 
-  const filterAndSetSuggestion = ({ value }) => {
+  const filterAndSetSuggestion = ({ value }: { value: string }) => {
+    const validateStringRegex = /^[a-zA-Z\s,]*$/
+    if (!validateStringRegex.test(value)) {
+      return setInputValue(value.slice(0, value.length - 1))
+    }
     const cleanValue = value.trim().toLowerCase()
     const filterData = onFilterData(cleanValue)
     setData(filterData)
@@ -51,32 +54,43 @@ const FilterBlock: FC<TFilterBlock> = ({
 
   return (
     <section className='filterBlock'>
-      <Autosuggest
-        suggestions={data}
-        onSuggestionsFetchRequested={filterAndSetSuggestion}
-        focusInputOnSuggestionClick={true}
-        getSuggestionValue={suggestion => suggestion.title}
-        onSuggestionsClearRequested={() => {}}
-        onSuggestionSelected={(_, data) => setData([data.suggestion])}
-        renderSuggestion={renderSuggestion}
-        highlightFirstSuggestion
-        alwaysRenderSuggestions
-        inputProps={{
-          placeholder: '¿Quieres buscar algo en particular?',
-          value: inputValue,
-          onChange: (_, { newValue }) => setInputValue(newValue)
-        }}
-      />
-      <Filters
-        data={dataBlock}
-        filters={filters}
-        onFilter={newData => setData(newData)}
-      />
-      <ul ref={parent}>
+      <article className='filterBlock-form'>
+        <Autosuggest
+          theme={{}}
+          suggestions={data}
+          onSuggestionsFetchRequested={filterAndSetSuggestion}
+          focusInputOnSuggestionClick={true}
+          getSuggestionValue={suggestion => suggestion.title}
+          onSuggestionsClearRequested={() => {}}
+          onSuggestionSelected={(_, data) => setData([data.suggestion])}
+          renderSuggestion={renderSuggestion}
+          inputProps={{
+            placeholder: '¿Qué proyecto buscas? 🐶',
+            value: inputValue,
+            onChange: (_, { newValue }) => setInputValue(newValue)
+          }}
+        />
+        <section className='filterBlock-filters'>
+          {inputValue.length <= 0 && (
+            <Filters
+              data={dataBlock}
+              filters={filters}
+              onFilter={newData => setData(newData)}
+            />
+          )}
+        </section>
+      </article>
+      <ul className='filterBlock-data'>
         {data.map(itemData => (
           <RenderItemComponent key={itemData.title} {...itemData} />
         ))}
       </ul>
+      {data.length < 1 && (
+        <article className='filterBlock-nothing'>
+          <h4>Ups!! no hay nada por aca 😥</h4>
+          <img src='./nothing.gif' alt='nothing bro' />
+        </article>
+      )}
     </section>
   )
 }

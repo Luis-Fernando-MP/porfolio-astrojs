@@ -1,8 +1,8 @@
-import FilterBlock from '@components/filterBlock/FilterBlock'
-import { Project } from '@components/index'
-import dataProjects from '@data/projects.json'
-import { ArtificialIntelligence, Database, MySql, Picasso } from '@icons/index'
 import type { JSX } from 'react'
+import FilterBlock from '@components/filterBlock/FilterBlock'
+import dataProjects from '@data/projects.json'
+import { Project } from '@components/index'
+import { ArtificialIntelligence, Database, MySql, Picasso } from '@icons/index'
 
 export type IProjectBlock = (typeof dataProjects)[0]
 
