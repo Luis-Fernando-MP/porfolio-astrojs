@@ -1,6 +1,6 @@
-@use '@sass/config/variables' as *;
-@use '@sass/utils/defaults' as defs;
 @use '@sass/utils/document';
+@use '@sass/utils/defaults' as defs;
+@use '@sass/config/variables' as *;
 
 *,
 ::before,
@@ -12,20 +12,16 @@
 }
 
 body {
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
   width: 100vw;
+  text-rendering: optimizeLegibility;
+  overflow: hidden auto;
   height: 100vh;
+  font-synthesis: none;
+  font-size: $f-family-size;
   font-family: $fm1;
   color: $txt-1;
   background-color: $bg-1;
   @extend %scroll-hidden;
-  font-size: $f-family-size;
-  overflow: hidden auto;
-  padding: $padding;
 }
 
 html {
@@ -134,6 +130,7 @@ input,
 textarea {
   background: none;
   border: none;
+  font-size: $f-p;
 }
 
 .icon {
@@ -166,17 +163,39 @@ textarea {
 .dg {
   color: $colorGr;
 }
+.dgc {
+  color: $colorGr2;
+}
 
 .sub-title {
   font-size: $f-h1;
 }
 
-.error {
-  background-color: rgba($bg-error, 0.2) !important;
-  &.active {
-    outline: 2px solid $bg-error;
+$listSecondColors: (
+  'error': $bg-error,
+  'check': $bg-check,
+  'bg1': $colorGr
+);
+
+@each $tag, $value in $listSecondColors {
+  .#{$tag} {
+    background-color: darken(rgba($value, 0.4), 5) !important;
+    p,
+    h3,
+    h4 {
+      color: lighten($value, 3) !important;
+    }
+    &.active {
+      outline: 2px solid $value;
+    }
+  }
+}
+
+@each $tag, $value in $listSecondColors {
+  .#{$tag}-tag {
+    background-color: $value !important;
     p {
-      color: $txt-1;
+      color: lighten($color: $value, $amount: 10) !important;
     }
   }
 }

@@ -1,12 +1,11 @@
+import type { ImageMetadata } from 'astro'
+import { type JSX, type FC, type ReactNode, useState } from 'react'
+import { randomID } from '@/utils/randomID'
+import { LowIndicatorFilter } from '@icons/index'
 import './style.scss'
 import './responsiveStyle.scss'
 
-import { randomID } from '@/utils/randomID'
-import type { ImageMetadata } from 'astro'
-import { type JSX, type FC, type ReactNode, useState } from 'react'
-import { LowIndicatorFilter } from '@icons/index'
-
-type TFilter = {
+export type TFilter = {
   icon: ImageMetadata
   name: string
 }
@@ -54,7 +53,7 @@ const Filters: FC<TFilters> = ({
             loading='lazy'
             decoding='async'
           />
-          <p>Sin filtros</p>
+          <h3>Sin filtros</h3>
         </button>
       </li>
       {filters.map(({ icon, name }) => (
@@ -72,7 +71,7 @@ const Filters: FC<TFilters> = ({
               loading='lazy'
               decoding='async'
             />
-            <p>{name}</p>
+            <h3>{name}</h3>
           </button>
         </li>
       ))}
@@ -82,7 +81,7 @@ const Filters: FC<TFilters> = ({
 
 export default Filters
 
-export const filterData = (data: TFilters['data'], filter: string) => {
+export const filterData = (data: TFiltersData[], filter: string = 'all') => {
   const newData = data.filter(item => item.rel.includes(filter))
   return filter === 'all' ? data : newData
 }

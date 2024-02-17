@@ -1,5 +1,5 @@
-@use '@sass/config/variables' as v;
 @use '@sass/utils/defaults' as defs;
+@use '@sass/config/variables' as v;
 
 .projects {
   @include defs.gap-default-items($gap: v.$padding * 2);

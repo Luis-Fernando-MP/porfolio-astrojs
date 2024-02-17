@@ -1,5 +1,6 @@
 @use '@sass/config/variables' as v;
 @use '@sass/utils/defaults' as defs;
+@use '@sass/utils/bg' as *;
 
 .contact {
   min-height: 60dvh;
@@ -16,7 +17,7 @@
   .btn {
     background-image: v.$gr-2;
     width: 100%;
-    color: v.$colorGr2;
+    color: white;
     font-weight: 600;
   }
   &-message {
@@ -52,10 +53,9 @@
         background-image: linear-gradient(
           67deg,
           transparent 20%,
-          rgba(v.$colorGr2, 0.1) 30%,
-          v.$colorGr2
+          rgba(v.$colorGrL, 0.1) 30%,
+          v.$colorGrL
         );
-
         top: 30%;
         left: 90%;
         width: 300px;
@@ -65,8 +65,8 @@
         background-image: linear-gradient(
           45deg,
           transparent 20%,
-          rgba(v.$colorGr2, 0.35) 80%,
-          v.$colorGr2
+          rgba(v.$colorGrL, 0.35) 80%,
+          v.$colorGrL
         );
         top: 70%;
         left: 40%;
@@ -77,8 +77,15 @@
       p {
         z-index: 1;
         position: relative;
-        color: v.$colorGr2;
         text-align: center;
+      }
+      h3 {
+        font-family: v.$fm3;
+        text-transform: uppercase;
+        color: white;
+      }
+      p {
+        color: v.$colorGrL;
       }
     }
   }
@@ -116,13 +123,11 @@
     }
   }
   &-validate {
-    // transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     position: relative;
-    // top: -20px;
     width: 100%;
     opacity: 0;
     border-radius: v.$radius;
-    height: 250px;
+    max-height: 250px;
     &,
     p {
       padding: v.$padding;

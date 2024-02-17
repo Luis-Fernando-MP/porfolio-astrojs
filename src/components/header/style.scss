@@ -1,129 +1,39 @@
-@use '@sass/config/variables' as v;
 @use '@sass/utils/defaults' as defs;
+@use '@sass/utils/border' as bor;
+@use '@sass/config/variables' as v;
+@use '@sass/utils/bg' as *;
 
-$minHeight: 70vh;
+$minHeight: 50vh;
 
-header {
-  @include defs.gap-default-items($dir: row);
-  position: relative;
-  justify-content: space-between;
-  min-height: $minHeight;
-  height: auto;
-  padding: v.$padding;
-}
-.header-personalInfo,
-.header-additional {
-  width: 50%;
-  height: $minHeight;
-}
-
-.header-personalInfo {
-  @include defs.gap-default-items;
+.header {
+  @include defs.gap-default-items();
+  @extend %triangularBG;
   justify-content: center;
-  > img {
-    width: 40px;
+  min-height: 50vh;
+  &-greeting,
+  &-name,
+  &-info {
+    text-align: center;
   }
-  h4 {
-    font-family: v.$fm3;
+  &-greeting,
+  &-info {
+    color: v.$txt-1;
   }
-  h1 {
+  &-info {
+    width: 50%;
+    margin: auto;
+  }
+  aside {
+    margin: auto;
+    width: auto;
+  }
+  &-name {
+    text-shadow: 0 0 2px pink;
+    font-family: v.$fm2;
     color: v.$colorGr;
     font-size: v.$f-xl;
     font-weight: 900;
     display: block;
     width: 100%;
-  }
-}
-
-.header-additional {
-  display: grid;
-  place-content: center;
-  position: relative;
-  &__container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  &__icon {
-    &.differentIcon {
-      $background: var(--optional-background);
-      padding: v.$padding;
-      background-color: $background;
-      border-radius: v.$radius;
-      backdrop-filter: blur(10px);
-    }
-    position: absolute;
-    img {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
-    }
-    $animation: var(--optional-animation);
-    animation: boomFade cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards;
-    animation-duration: $animation;
-    @keyframes boomFade {
-      from,
-      to {
-        scale: 0;
-        opacity: 0;
-        filter: blur(20px);
-      }
-      40%,
-      60% {
-        scale: 1;
-        opacity: 1;
-        filter: blur(0px);
-      }
-    }
-  }
-}
-
-.header-me {
-  @include defs.gap-default-items();
-  z-index: 1;
-  top: -30%;
-  width: 250px;
-  position: relative;
-  padding: v.$padding v.$padding;
-  overflow: hidden;
-  min-height: 120px;
-  height: auto;
-  border-radius: v.$radius;
-  background-color: v.$bg-2;
-  p {
-    font-size: v.$f-span;
-  }
-  &__image {
-    @include defs.gap-default-items($dir: row);
-    width: 100%;
-    height: 40px;
-    img {
-      min-width: 40px;
-      height: 40px;
-      object-fit: cover;
-      border-radius: 50%;
-      background-color: v.$bg-1;
-    }
-  }
-  &__text {
-    display: inline-flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-    h4 {
-      width: 150px;
-      font-family: v.$fm3;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    a {
-      font-weight: 500;
-      color: v.$bg-normal;
-    }
   }
 }

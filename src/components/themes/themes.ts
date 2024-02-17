@@ -2,19 +2,19 @@ import themes from '@data/themes.json'
 
 const NAME_STORAGE_THEME = 'theme'
 
-export const NAV = document.querySelector('nav')
-const layoutThemes = document.querySelector('ul#nav-themes')
+export const themesParent = document.querySelector('div.themes')
+const layoutThemes = document.querySelector('ul#themes-items')
 
 const toggleSelectorTheme = () => {
   layoutThemes?.classList.toggle('select-theme')
 }
 
-NAV?.addEventListener('click', ({ target }) => {
+themesParent?.addEventListener('click', ({ target }) => {
   const currentElement = target instanceof HTMLElement
   if (!currentElement || !target) return
-  const btnSelector = target.closest('button#theme-selector')
+  const btnSelector = target.closest('button#themes-selector')
   const btnTheme = target.closest('button#theme-item')
-
+  console.log(btnSelector, btnTheme)
   if (btnSelector) {
     toggleSelectorTheme()
   } else if (btnTheme) {

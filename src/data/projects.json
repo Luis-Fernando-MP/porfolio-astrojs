@@ -7,6 +7,7 @@
       "Tener instalado MySql en su versión 1.78 o superior.",
       "Tener instalado Git en su versión 2.32.0 o superior."
     ],
+    "rel": ["Tecnologías backend", "Con Inteligencia Artificial"],
     "state": "terminado",
     "installation": [
       {
@@ -32,6 +33,7 @@
   {
     "title": "Diario Personal Online",
     "description": "Esta aplicación web de diario te permite gestionar y compartir tus ideas, días y experiencias de manera personal. Cuenta con un calendario de actividades, un espacio para tus tareas diarias, así como carpetas y etiquetas para organizar y personalizar tus días según tus preferencias.",
+    "rel": ["Tecnologías backend", "Tecnologías frontend", "Base de datos"],
     "runApplication": [
       "Tener instalado Node.js en su versión 18 o superior.",
       "Tener instalado MySql en su versión 1.78 o superior.",
@@ -60,13 +62,14 @@
     "background": "diario.webp"
   },
   {
-    "title": "Diario Personal Online",
+    "title": "EL fake le decian",
     "description": "Esta aplicación web de diario te permite gestionar y compartir tus ideas, días y experiencias de manera personal. Cuenta con un calendario de actividades, un espacio para tus tareas diarias, así como carpetas y etiquetas para organizar y personalizar tus días según tus preferencias.",
     "runApplication": [
       "Tener instalado Node.js en su versión 18 o superior.",
       "Tener instalado MySql en su versión 1.78 o superior.",
       "Tener instalado Git en su versión 2.32.0 o superior."
     ],
+    "rel": ["Tecnologías backend", "Base de datos"],
     "state": "progreso",
     "installation": [
       {

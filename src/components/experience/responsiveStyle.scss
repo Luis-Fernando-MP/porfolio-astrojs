@@ -3,11 +3,31 @@
 
 @include m.largeScreen() {
   .experience-history {
+    width: 350px;
     border-top: 1.2px solid v.$colorGr;
     &::after {
       top: -15px;
       left: 50%;
       transform: translateX(-50%);
     }
+    h3,
+    aside h4,
+    > p {
+      width: 100%;
+      text-align: center;
+    }
+    aside {
+      flex-direction: column;
+      align-items: center;
+    }
+    a.btn {
+      margin: auto;
+    }
+  }
+}
+
+@include m.smallerScreen() {
+  .experience-history {
+    width: 100%;
   }
 }

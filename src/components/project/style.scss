@@ -1,6 +1,6 @@
-@use '@sass/config/variables' as v;
 @use '@sass/utils/defaults' as defs;
 @use '@sass/utils/border' as border;
+@use '@sass/config/variables' as v;
 
 .project {
   overflow: hidden;
@@ -8,9 +8,13 @@
   height: 200px;
   position: relative;
   border-radius: v.$radius;
-  border: 2px solid v.$bg-2;
   background-color: v.$bg-2;
-  @include defs.gap-default-items($dir: row, $gap: 0);
+  @include defs.hover;
+  &-anchor {
+    width: 100%;
+    height: 100%;
+    @include defs.gap-default-items($dir: row, $gap: 0);
+  }
   &.progress {
     &::after {
       color: #6d5e14;
@@ -45,7 +49,7 @@
     @include defs.gap-default-items($gap: 10px);
     width: calc(100% - 200px);
     height: 100%;
-    padding: 5px 10px;
+    padding: 10px;
     position: relative;
     background-color: v.$bg-2;
     &::before {

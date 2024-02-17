@@ -1,0 +1,33 @@
+@use '@sass/utils/defaults' as defs;
+@use '@sass/utils/border' as bor;
+@use '@sass/config/variables' as v;
+
+$suggestion: 'li[role="option"]';
+
+#{$suggestion} {
+  @include defs.gap-default-items($dir: row, $ali: center);
+  width: 100%;
+  background-color: v.$bg-1;
+  padding: v.$padding;
+  border-radius: v.$radius;
+  @include bor.simple($color: transparent);
+  cursor: pointer;
+  user-select: none;
+  &[aria-selected='true'] {
+    border-color: v.$colorGr;
+  }
+}
+.suggestion {
+  &-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  &-info {
+    width: 100%;
+  }
+  &-title {
+    width: 90%;
+  }
+}

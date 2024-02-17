@@ -1,0 +1,16 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/media' as m;
+
+$suggestion: 'li[role="option"]';
+
+@include m.mediumScreen() {
+  .suggestion {
+    &-title {
+      font-size: v.$f-span;
+    }
+    &-shortDescription {
+      display: none;
+      width: 100%;
+    }
+  }
+}

@@ -6,6 +6,7 @@
   padding: v.$padding;
   position: relative;
   $sizeBall: 30px;
+  box-shadow: v.$shadow;
   border-radius: v.$radius;
   &::after {
     content: attr(data-index);

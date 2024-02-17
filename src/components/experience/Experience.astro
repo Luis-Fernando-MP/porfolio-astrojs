@@ -12,23 +12,27 @@ interface Props {
 
 const { history, index } = Astro.props
 
-const { date, position, url, logo, responsibilities, company } = history
+const { date, position, url, background, responsibilities, title } = history
 ---
 
 <li class='experience-history' data-index={index + 1}>
   <span>{date}</span>
   <h3>{position}</h3>
   <aside class='experience-history__images'>
-    <h4>{company}</h4>
+    <h4>{title}</h4>
     <div>
       <img src='./me.webp' loading='lazy' decoding='async' />
       <a href={url} target='_blank' rel='noopener noreferrer'>
-        <img src={`./companies/${logo}.webp`} loading='lazy' decoding='async' />
+        <img
+          src={`./companies/${background}.webp`}
+          loading='lazy'
+          decoding='async'
+        />
       </a>
     </div>
   </aside>
   <p>{responsibilities[0]}</p>
-  <a href={`experiences/${company}`} class='btn'>
+  <a href={`experiences/${title}`} class='btn'>
     <p>Saber más...</p>
     <Icon file={Eye} />
   </a>

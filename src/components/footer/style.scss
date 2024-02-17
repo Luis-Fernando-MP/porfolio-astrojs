@@ -1,9 +1,7 @@
 @use '@sass/config/variables' as v;
 
-footer h4 {
-  background: v.$gr-2;
-  background-clip: text;
-  color: transparent;
+footer p {
+  color: v.$bg-normal;
   font-weight: 400;
   text-align: center;
   padding: v.$padding;

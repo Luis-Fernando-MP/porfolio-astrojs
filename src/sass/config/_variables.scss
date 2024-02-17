@@ -13,10 +13,13 @@ $gr-1: conic-gradient(
 );
 $gr-2: linear-gradient(45deg, #5104d3 0%, #7526ec 50%, #9e43ff 100%);
 $colorGr: #5104d3;
-$colorGr2: #e7d1ff;
-$bg-error: #ff3a5e;
+$colorGrL: lighten($colorGr, 40);
+$colorGr2: var(--bg-normal);
+$bg-error: #ef1746;
 $bg-check: #00a671;
+$shadow: 0px 10px 15px -3px rgba(49, 23, 74, 0.1);
 
+$ani: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 :root {
   --global-family-size: 12px;
   --xl-font-size: 4.8em;

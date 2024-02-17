@@ -1,5 +1,5 @@
-@use '@sass/config/variables' as v;
 @use '@sass/utils/media' as m;
+@use '@sass/config/variables' as v;
 
 @include m.largeScreen() {
   .projects {

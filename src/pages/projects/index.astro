@@ -1,0 +1,13 @@
+---
+import ProjectsBlock from './ProjectsBlock'
+import Layout from '@layouts/Layout.astro'
+import Balls from '@components/balls/Balls.astro'
+import { Footer, Nav } from '@components/index'
+---
+
+<Layout title='Porfolio: mis proyectos'>
+  <Balls slot='balls' />
+  <Nav useHttp />
+  <ProjectsBlock client:load />
+  <Footer />
+</Layout>

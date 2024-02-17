@@ -2,65 +2,17 @@
 @use '@sass/utils/media' as m;
 
 @include m.largeScreen() {
-  header {
-    height: auto;
-    min-height: 50dvh;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    .header-personalInfo,
-    .header-additional {
-      width: 100%;
-    }
-    .header-personalInfo {
-      align-items: center;
-      height: auto;
-      h1,
-      h3,
-      h4 {
-        text-align: center;
-      }
-      h4,
-      aside {
-        width: 400px;
-      }
-      aside {
-        justify-content: center;
-      }
-      p {
-        width: 60%;
-        text-align: center;
-      }
-    }
-    .header-additional {
-      padding: 0;
-      padding: 20px;
-      width: auto;
-      height: auto;
-      height: 200px;
-      &__container {
-        display: none;
-      }
-    }
-    .header-me {
-      top: initial;
-      p {
-        font-size: v.$f-p;
-      }
+  .header {
+    &-info {
+      width: 80%;
     }
   }
 }
 
 @include m.smallScreen() {
-  header {
-    .header-personalInfo {
-      h4,
-      aside {
-        width: 100%;
-      }
-      p {
-        width: 90%;
-      }
+  .header {
+    &-info {
+      width: 100%;
     }
   }
 }
