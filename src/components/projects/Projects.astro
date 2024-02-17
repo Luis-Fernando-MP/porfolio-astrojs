@@ -1,10 +1,10 @@
 ---
+import projects from '@data/projects.json'
+import Icon from '@/utils/Icon.astro'
+import { Project } from '@components/index'
+import { KermitTheFrog } from '@icons/index'
 import './style.scss'
 import './responsiveStyle.scss'
-import Icon from '@/utils/Icon.astro'
-import { KermitTheFrog } from '@icons/index'
-import projects from '@data/projects.json'
-import { Project } from '@components/index'
 
 export type IProject = (typeof projects)[0]
 ---

@@ -1,5 +1,4 @@
 ---
-import Balls from '@components/balls/Balls.astro'
 import Layout from '@layouts/Layout.astro'
 import {
   AboutMe,
@@ -15,7 +14,6 @@ import {
 
 <Layout title='Porfolio: Luis Fernando'>
   <Nav />
-  <Balls slot='balls' />
   <Header />
   <Experiences />
   <Projects />
@@ -24,3 +22,12 @@ import {
   <Contact />
   <Footer />
 </Layout>
+<script>
+  const { body, documentElement } = document
+  document?.addEventListener('scroll', () => {
+    const nav = body.querySelector('nav')
+    if (!nav || !(nav instanceof HTMLElement)) return
+    if (documentElement.scrollTop > 150) return nav.classList.add('active')
+    nav?.classList.remove('active')
+  })
+</script>

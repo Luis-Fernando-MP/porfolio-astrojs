@@ -1,3 +1,8 @@
+import technologies from '@data/programmingLanguages.json'
+import { useState, type JSX } from 'react'
+import { randomID } from '@/utils/randomID'
+import { Filters } from '@components/index'
+import { filterData } from '@components/filters/Filters'
 import './style.scss'
 import './responsiveStyle.scss'
 import {
@@ -8,11 +13,6 @@ import {
   SourceCode,
   ViewMore
 } from '@icons/index'
-import { useState, type JSX } from 'react'
-import technologies from '@data/programmingLanguages.json'
-import { Filters } from '@components/index'
-import { randomID } from '@/utils/randomID'
-import { filterData } from '@components/filters/Filters'
 
 const filters = [
   {

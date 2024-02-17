@@ -1,8 +1,7 @@
 ---
 import Icon from '@/utils/Icon.astro'
-import './style.scss'
 import { Themes } from '@components/index'
-
+import './style.scss'
 import {
   GroupOfProjects,
   MaleUser,
@@ -11,6 +10,10 @@ import {
   Mail,
   CloudLink
 } from '@icons/index'
+
+interface Props {
+  useHttp?: boolean
+}
 
 const itemsNav = [
   {
@@ -39,25 +42,29 @@ const itemsNav = [
     file: Mail
   }
 ]
+
+const { useHttp } = Astro.props
 ---
 
 <nav>
   <Themes />
   <ul class='nav-items' id='nav-links-container'>
     {
-      itemsNav.map(({ file, title, link }) => (
-        <li title={title} class='nav-item'>
-          <a href={`#${link}`} class='hash-link' data-link={link}>
-            <Icon file={file} />
-          </a>
-        </li>
-      ))
+      itemsNav.map(({ file, title, link }) => {
+        const linkAnchor = `${useHttp ? '/' : ''}#${link}`
+        return (
+          <li title={title} class='nav-item'>
+            <a href={linkAnchor} class='hash-link' data-link={link}>
+              <Icon file={file} />
+            </a>
+          </li>
+        )
+      })
     }
     <div class='nav-border'></div>
   </ul>
   <a title='CV' target='_blank' rel='noopener noreferrer' href=''>
-    <Icon file={CloudLink} /></a
-  >
+    <Icon file={CloudLink} />
+  </a>
 </nav>
-
 <script src='./navScript.ts'></script>

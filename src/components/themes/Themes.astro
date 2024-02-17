@@ -1,14 +1,14 @@
 ---
+import themes from '@data/themes.json'
 import Icon from '@/utils/Icon.astro'
 import { PaintPalette } from '@icons/index'
-import themes from '@data/themes.json'
 import './style.scss'
 ---
 
 <div class='themes'>
   <button title='Escoger tema' id='themes-selector'>
-    <Icon file={PaintPalette} /></button
-  >
+    <Icon file={PaintPalette} />
+  </button>
   <ul class='themes-items' id='themes-items'>
     {
       themes.map(({ title, colors }) => (

@@ -1,16 +1,15 @@
 ---
+import '@fontsource-variable/tourney'
+import '@fontsource-variable/lexend'
+import '@fontsource-variable/baloo-da-2'
+import './layout.scss'
+import './responsiveLayout.scss'
+
 interface Props {
   title: string
 }
 
 const { title } = Astro.props
-
-import '@fontsource-variable/tourney'
-import '@fontsource-variable/baloo-da-2'
-import '@fontsource-variable/lexend'
-
-import './layout.scss'
-import './responsiveLayout.scss'
 ---
 
 <!doctype html>
@@ -30,16 +29,16 @@ import './responsiveLayout.scss'
     </main>
     <aside class='chatBot'>
       <script>
-        window.addEventListener('mouseover', initLandbot, { once: true })
-        window.addEventListener('touchstart', initLandbot, { once: true })
-        var myLandbot
-        function initLandbot() {
-          if (!myLandbot) {
+        window.addEventListener('mouseover', bootstrap, { once: true })
+        window.addEventListener('touchstart', bootstrap, { once: true })
+        let bot
+        function bootstrap() {
+          if (!bot) {
             var s = document.createElement('script')
             s.type = 'text/javascript'
             s.async = true
             s.addEventListener('load', function () {
-              var myLandbot = new Landbot.Livechat({
+              var bot = new Landbot.Livechat({
                 configUrl:
                   'https://storage.googleapis.com/landbot.site/v3/H-2111888-ISUNPQ9SM6UL6TP2/index.json'
               })
@@ -53,19 +52,3 @@ import './responsiveLayout.scss'
     </aside>
   </body>
 </html>
-<script>
-  const { body, documentElement } = document
-  const nav = document.querySelector('nav')
-  const main = nav?.parentNode as HTMLElement
-  document?.addEventListener('scroll', () => {
-    const nav = body.querySelector('nav')
-    if (!nav || !(nav instanceof HTMLElement)) return
-    if (documentElement.scrollTop > 150) return nav.classList.add('active')
-    nav?.classList.remove('active')
-  })
-  document.addEventListener('scroll', () => {
-    const scrollPosition = window.scrollY || document.documentElement.scrollTop
-    if (scrollPosition > 50) return main?.classList.add('scroll')
-    main?.classList.remove('scroll')
-  })
-</script>
