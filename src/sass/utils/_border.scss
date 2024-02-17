@@ -4,11 +4,15 @@
   $bg: v.$bg-1,
   $gr: v.$gr-1,
   $radius: v.$radius,
-  $size: 3px
+  $size: 1.7px
 ) {
   background:
     linear-gradient($bg, $bg) padding-box,
     $gr border-box;
   border-radius: $radius;
   border: $size solid transparent;
+}
+
+@mixin simple($color: v.$colorGr, $size: 1.7px) {
+  border: $size solid $color;
 }

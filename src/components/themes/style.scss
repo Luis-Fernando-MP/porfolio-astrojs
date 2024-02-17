@@ -1,46 +1,42 @@
+@use '@sass/utils/defaults' as defs;
+@use '@sass/utils/border' as bor;
 @use '@sass/config/variables' as v;
-@use '@sass/utils/border' as b;
-@use '@sass/config/index' as i;
 
 .themes {
   background-color: v.$bg-2;
   position: relative;
   border-radius: v.$radius;
-
   $currentBg: var(--theme-color);
+  @include defs.hover;
   &-items {
-    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    &.select-theme {
-      top: 100%;
-      visibility: visible;
-      opacity: 1;
-    }
-    top: 80%;
-    visibility: hidden;
-    opacity: 0;
-    border: 2px solid v.$bg-1;
-    background-color: v.$bg-2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include defs.gap-default-items($ali: center);
+    @include bor.gradientBorder;
     width: 100%;
-    border-radius: v.$radius;
-    height: auto;
+    visibility: hidden;
+    transition: v.$ani;
+    top: 80%;
     position: absolute;
+    padding: v.$padding 0;
+    opacity: 0;
     margin-top: v.$padding;
     left: 0;
-    gap: v.$padding;
-    padding: v.$padding 0;
+    border-radius: v.$radius;
+    background-color: v.$bg-2;
+    &.select-theme {
+      visibility: visible;
+      top: 100%;
+      opacity: 1;
+    }
   }
   &__item {
     width: calc(v.$icon * 1.5);
-    height: calc(v.$icon * 1.5);
-    border-radius: 5px;
     overflow: hidden;
+    height: calc(v.$icon * 1.5);
+    border-radius: 50%;
   }
   &__item > button {
-    background-image: $currentBg;
     width: 100%;
     height: 100%;
+    background-image: $currentBg;
   }
 }

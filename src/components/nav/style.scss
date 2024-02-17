@@ -1,5 +1,5 @@
-@use '@sass/config/variables' as v;
 @use '@sass/utils/border' as b;
+@use '@sass/config/variables' as v;
 @use '@sass/config/index' as i;
 
 nav {
@@ -29,6 +29,6 @@ nav {
     top: 0;
     left: calc(v.$size-item * 2);
     @include b.gradientBorder;
-    transition: 0.2s cubic-bezier(0.47, 0, 0, 1.46);
+    transition: v.$ani;
   }
 }

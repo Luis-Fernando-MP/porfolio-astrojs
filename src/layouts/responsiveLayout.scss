@@ -1,6 +1,6 @@
-@use '@sass/config/variables' as v;
-@use '@sass/utils/document';
 @use '@sass/utils/media' as m;
+@use '@sass/config/variables' as v;
+
 :root {
   --icon-size: 20px;
   @include m.smallScreen() {

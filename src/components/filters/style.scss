@@ -6,12 +6,14 @@
   @include defs.gap-default-items($dir: row);
   flex-wrap: wrap;
   &-action {
-    p {
-      font-size: v.$f-span;
+    background-color: v.$bg-2;
+    padding: v.$padding * 1.2;
+    h3 {
+      font-size: v.$f-h4;
     }
     &.active {
       background-color: v.$colorGr;
-      p {
+      h3 {
         color: white;
       }
     }

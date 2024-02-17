@@ -8,9 +8,15 @@
 }
 
 @mixin hover {
-  transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: v.$ani;
   outline: 1.5px solid transparent;
   &:hover {
     outline-color: v.$colorGr;
   }
+}
+
+@mixin txtPoints {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

@@ -1,23 +1,18 @@
 @use '@sass/config/variables' as v;
-@use '@sass/utils/document';
 @use '@sass/config/global';
-
 main {
   min-height: 100vh;
   height: auto;
-  transition: 0.1s ease-in-out;
+  transition: v.$ani;
   width: 990px;
   margin: auto;
   padding-bottom: v.$padding;
 }
 
-main.scroll .section {
-  padding-top: v.$padding * 6;
-}
-
 .section {
-  transition: 0.2s ease-in-out;
   padding: v.$padding;
+  padding-top: v.$padding * 6;
+  transition: v.$ani;
   width: 100%;
 }
 

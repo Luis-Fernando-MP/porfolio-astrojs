@@ -1,5 +1,6 @@
 @use '@sass/config/variables' as v;
 @use '@sass/utils/defaults' as defs;
+@use '@sass/utils/border' as bor;
 
 .experience {
   min-height: 60vh;
@@ -8,7 +9,7 @@
   @include defs.gap-default-items($ali: center);
   &::after {
     content: '';
-    top: 0;
+    top: v.$padding * 3;
     position: absolute;
     background-color: v.$bg-2;
     height: 100%;
@@ -19,12 +20,15 @@
     @include defs.gap-default-items($ali: flex-start);
     .btn {
       background-color: v.$bg-1;
+      @include bor.gradientBorder;
     }
   }
   &-histories {
-    @include defs.gap-default-items(v.$padding * 2);
+    @include defs.gap-default-items(v.$padding * 2, $dir: row);
+    flex-wrap: wrap;
     border-left: 2px solid v.$colorGr;
     border-radius: 20px;
     padding: v.$padding;
+    justify-content: center;
   }
 }
