@@ -1,0 +1,81 @@
+@use '@sass/utils/defaults' as defs;
+@use '@sass/utils/border' as border;
+@use '@sass/config/variables' as v;
+
+body {
+  &::after {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80dvh;
+    content: '';
+    background: radial-gradient(
+      ellipse at 50% 50%,
+      transparent -50%,
+      v.$bg-1 75%
+    );
+    z-index: -1;
+    position: absolute;
+  }
+}
+.pageProject {
+  &-header {
+    place-content: center;
+    min-height: 40vh;
+    display: grid;
+    &__background {
+      z-index: -1;
+      width: 100%;
+      top: 0;
+      position: absolute;
+      opacity: 0.5;
+      object-fit: cover;
+      left: 0;
+      height: 80dvh;
+    }
+    &__firstView {
+      @include defs.gap-default-items($ali: flex-start);
+      button.btn {
+        width: auto;
+        color: v.$txt-1;
+        background-color: v.$bg-1;
+      }
+      li.project > a {
+        user-select: none;
+        pointer-events: none;
+        a[target='_blank'] {
+          pointer-events: all;
+        }
+      }
+    }
+  }
+  &-description {
+    padding: v.$padding;
+    h2,
+    p {
+      text-align: center;
+    }
+  }
+  &-installation {
+    padding: v.$padding * 2;
+    border-radius: v.$radius;
+    background-color: v.$bg-2;
+    @include defs.gap-default-items();
+    a {
+      text-decoration: underline;
+      color: v.$bg-normal;
+    }
+    pre {
+      padding: v.$padding;
+      justify-content: space-between;
+      border-radius: v.$radius;
+      @include defs.gap-default-items($ali: center, $dir: row);
+    }
+    pre button {
+      padding: 10px 15px;
+      color: v.$txt-2;
+      border-radius: 5px;
+      background-color: v.$bg-1;
+    }
+  }
+}

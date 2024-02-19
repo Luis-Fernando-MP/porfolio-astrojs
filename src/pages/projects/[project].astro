@@ -1,0 +1,74 @@
+---
+import './projectStyle.scss'
+import './projectResponsiveStyle.scss'
+
+import projects from '@data/projects.json'
+import Layout from '@layouts/Layout.astro'
+import { Project } from '@components/index'
+import { Image } from 'astro:assets'
+import { getName, slugify } from '@/utils/format'
+import { Footer, Nav } from '@components/index'
+
+export function getStaticPaths() {
+  const routes = projects.map(project => ({
+    params: { project: slugify(project.title) },
+    props: project
+  }))
+  return routes
+}
+const projectsMDX = await Astro.glob('../../content/projects/*.mdx')
+const project = Astro.props
+
+const separateTitle = project.title.split(' ')
+const lastWordTitle = separateTitle.pop()
+const penultimateWordTitle = separateTitle.pop()
+const MDX = projectsMDX.find(({ url }) => getName(url as string) === project.id)
+---
+
+<Layout title={`proyecto: ${project.title}`}>
+  <Nav useHttp />
+  <header class='pageProject-header'>
+    <Image
+      class='pageProject-header__background'
+      src={`/projects/${project.background}`}
+      alt={`Imagen de fondo, acerca del proyecto: ${project.title}`}
+      width='1020'
+      height='750'
+    />
+    <section class='pageProject-header__firstView'>
+      <button class='btn' onclick='window.history.back()'>⬅️ Regresar</button>
+      <Project {...project} client:visible />
+    </section>
+  </header>
+  <section class='pageProject-description'>
+    <h2 class='sub-title'>
+      {separateTitle.join(' ')}
+      <b class='dg'>{penultimateWordTitle} {lastWordTitle}</b>
+    </h2>
+    <p>{project.description}</p>
+  </section>
+  <section class='pageProject-installation'>
+    {MDX && <MDX.Content />}
+  </section>
+  <Footer />
+</Layout>
+<script>
+  let blocks = document.querySelectorAll('pre')
+  blocks.forEach(async block => {
+    if (!navigator.clipboard) return
+    let button = document.createElement('button')
+    button.textContent = '📓 Copiar'
+    block.appendChild(button)
+    button.addEventListener('click', async () => {
+      const code = block.querySelector('code')
+      if (!code || !(code instanceof HTMLElement)) return
+      await navigator.clipboard.writeText(code.innerText)
+      button.innerText = '¡Copiado! ✅'
+      button.classList.add('check-tag')
+      setTimeout(() => {
+        button.innerText = '📓 Copiar'
+        button.classList.remove('check-tag')
+      }, 1000)
+    })
+  })
+</script>
