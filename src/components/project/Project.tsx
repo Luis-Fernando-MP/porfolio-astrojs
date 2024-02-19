@@ -3,6 +3,7 @@ import type { IProjectBlock } from '@pages/projects/ProjectsBlock'
 import { Figma, GitHub, Internet } from '@icons/index'
 import './style.scss'
 import './responsiveStyle.scss'
+import { slugify } from '@/utils/format'
 
 interface TProject extends IProjectBlock {
   children?: ReactNode[]
@@ -22,10 +23,10 @@ const Project: FC<TProject> = (props): JSX.Element => {
       className={`project ${state === 'terminado' ? 'finish' : 'progress'}`}
       data-state={state}
     >
-      <a href={`/project/${title}`} className='project-anchor'>
+      <a href={`/projects/${slugify(title)}`} className='project-anchor'>
         <div className='project-background'>
           <img
-            src={`./projects/${background}`}
+            src={`/projects/${background}`}
             alt={title}
             loading='lazy'
             decoding='async'

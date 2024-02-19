@@ -53,7 +53,7 @@ const Filters: FC<TFilters> = ({
             loading='lazy'
             decoding='async'
           />
-          <h3>Sin filtros</h3>
+          <h4>Sin filtros</h4>
         </button>
       </li>
       {filters.map(({ icon, name }) => (
@@ -71,7 +71,7 @@ const Filters: FC<TFilters> = ({
               loading='lazy'
               decoding='async'
             />
-            <h3>{name}</h3>
+            <h4>{name}</h4>
           </button>
         </li>
       ))}

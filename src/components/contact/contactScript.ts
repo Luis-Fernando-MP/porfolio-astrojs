@@ -14,7 +14,6 @@ const validateContainer = parentContact?.querySelector(
 btn?.addEventListener('click', () => {
   if (!(form instanceof HTMLFormElement)) return
   const validForm = validateForm()
-  console.log('entra', validForm)
   if (validForm === undefined) return
   form.submit()
 })

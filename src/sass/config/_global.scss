@@ -22,6 +22,7 @@ body {
   color: $txt-1;
   background-color: $bg-1;
   @extend %scroll-hidden;
+  position: relative;
 }
 
 html {

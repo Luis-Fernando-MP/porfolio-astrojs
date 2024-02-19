@@ -14,7 +14,6 @@ themesParent?.addEventListener('click', ({ target }) => {
   if (!currentElement || !target) return
   const btnSelector = target.closest('button#themes-selector')
   const btnTheme = target.closest('button#theme-item')
-  console.log(btnSelector, btnTheme)
   if (btnSelector) {
     toggleSelectorTheme()
   } else if (btnTheme) {
@@ -33,11 +32,12 @@ const setTheme = (selectTitleTheme: string) => {
   for (const color in colors) {
     document.documentElement.style.setProperty(`--${color}`, colors[color])
   }
-  localStorage.setItem(NAME_STORAGE_THEME, selectTitleTheme)
+  sessionStorage.setItem(NAME_STORAGE_THEME, selectTitleTheme)
 }
 
 const consultLocalStorage = () => {
-  const storageTheme = localStorage.getItem(NAME_STORAGE_THEME)
+  const storageTheme = sessionStorage.getItem(NAME_STORAGE_THEME)
+  console.log(storageTheme)
   try {
     if (!storageTheme) return
     setTheme(storageTheme)
