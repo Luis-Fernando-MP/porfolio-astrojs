@@ -4,6 +4,7 @@ import './responsiveStyle.scss'
 import type workExperiences from '@data/workExperiences.json'
 import Icon from '@/utils/Icon.astro'
 import { Eye } from '@icons/index'
+import { Image } from 'astro:assets'
 
 interface Props {
   history: (typeof workExperiences)[0]
@@ -21,7 +22,7 @@ const { date, position, url, background, responsibilities, title } = history
   <aside class='experience-history__images'>
     <h4>{title}</h4>
     <div>
-      <img src='./me.webp' loading='lazy' decoding='async' />
+      <Image src='/me.webp' alt='photo luis Fernando' width='20' height='20' />
       <a href={url} target='_blank' rel='noopener noreferrer'>
         <img
           src={`./companies/${background}.webp`}

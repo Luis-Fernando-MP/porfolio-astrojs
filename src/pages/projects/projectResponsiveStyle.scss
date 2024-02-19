@@ -1,0 +1,12 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/media' as m;
+
+@include m.smallScreen() {
+  .pageProject-installation {
+    padding: v.$padding;
+    pre {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}

@@ -1,95 +1,28 @@
 [
   {
+    "id": "project1",
     "title": "Sistema gestor de Recuerdos Familiares",
     "description": "Este sistema gestor centraliza los últimos acontecimientos familiares mediante archivos multimedia, proporcionando un espacio significativo para los recuerdos. Además, incluye un calendario que organiza cumpleaños, días festivos y coordinaciones familiares, ofreciendo una visión completa de las fechas importantes. El sistema también presenta un hermoso árbol genealógico, brindando una representación visual simple y atractiva de la historia familiar para el deleite de todos los miembros.",
-    "runApplication": [
-      "Tener instalado Node.js en su versión 18 o superior.",
-      "Tener instalado MySql en su versión 1.78 o superior.",
-      "Tener instalado Git en su versión 2.32.0 o superior."
-    ],
     "rel": ["Tecnologías backend", "Con Inteligencia Artificial"],
     "state": "terminado",
-    "installation": [
-      {
-        "step": "Clone el repositorio en su máquina local:",
-        "code": "git clone https://github.com/luJisJu/porfolio"
-      },
-      {
-        "step": "Instalar las dependencias del proyecto:",
-        "code": "pnpm install"
-      },
-      {
-        "step": "Clone el repositorio en su máquina local:",
-        "code": "pnpm run dev"
-      }
-    ],
+    "background": "familiar.webp",
     "links": {
       "web": "https://fontsource.org",
       "github": "https://github.com/luJisJu/porfolio",
       "figma": "https://www.figma.com/file/O4B5Qbda6Tmrf9Bhz6gJxC/Porfolio"
-    },
-    "background": "familiar.webp"
+    }
   },
   {
-    "title": "Diario Personal Online",
+    "id": "project2",
+    "title": "Herramienta online, fundamentada en un diario Personal",
     "description": "Esta aplicación web de diario te permite gestionar y compartir tus ideas, días y experiencias de manera personal. Cuenta con un calendario de actividades, un espacio para tus tareas diarias, así como carpetas y etiquetas para organizar y personalizar tus días según tus preferencias.",
     "rel": ["Tecnologías backend", "Tecnologías frontend", "Base de datos"],
-    "runApplication": [
-      "Tener instalado Node.js en su versión 18 o superior.",
-      "Tener instalado MySql en su versión 1.78 o superior.",
-      "Tener instalado Git en su versión 2.32.0 o superior."
-    ],
     "state": "progreso",
-    "installation": [
-      {
-        "step": "Clone el repositorio en su máquina local:",
-        "code": "git clone https://github.com/luJisJu/porfolio"
-      },
-      {
-        "step": "Instalar las dependencias del proyecto:",
-        "code": "pnpm install"
-      },
-      {
-        "step": "Clone el repositorio en su máquina local:",
-        "code": "pnpm run dev"
-      }
-    ],
+    "background": "diario.webp",
     "links": {
       "web": "https://fontsource.org",
       "github": "https://github.com/luJisJu/porfolio",
       "figma": "https://www.figma.com/file/O4B5Qbda6Tmrf9Bhz6gJxC/Porfolio"
-    },
-    "background": "diario.webp"
-  },
-  {
-    "title": "EL fake le decian",
-    "description": "Esta aplicación web de diario te permite gestionar y compartir tus ideas, días y experiencias de manera personal. Cuenta con un calendario de actividades, un espacio para tus tareas diarias, así como carpetas y etiquetas para organizar y personalizar tus días según tus preferencias.",
-    "runApplication": [
-      "Tener instalado Node.js en su versión 18 o superior.",
-      "Tener instalado MySql en su versión 1.78 o superior.",
-      "Tener instalado Git en su versión 2.32.0 o superior."
-    ],
-    "rel": ["Tecnologías backend", "Base de datos"],
-    "state": "progreso",
-    "installation": [
-      {
-        "step": "Clone el repositorio en su máquina local:",
-        "code": "git clone https://github.com/luJisJu/porfolio"
-      },
-      {
-        "step": "Instalar las dependencias del proyecto:",
-        "code": "pnpm install"
-      },
-      {
-        "step": "Clone el repositorio en su máquina local:",
-        "code": "pnpm run dev"
-      }
-    ],
-    "links": {
-      "web": "",
-      "github": "https://github.com/luJisJu/porfolio",
-      "figma": "https://www.figma.com/file/O4B5Qbda6Tmrf9Bhz6gJxC/Porfolio"
-    },
-    "background": "diario.webp"
+    }
   }
 ]

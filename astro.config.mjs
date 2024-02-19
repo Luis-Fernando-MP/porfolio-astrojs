@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config'
 import { resolve } from 'path'
 import react from '@astrojs/react'
+import mdx from '@astrojs/mdx'
 
 // https://astro.build/config
 export default defineConfig({
@@ -20,5 +21,15 @@ export default defineConfig({
       '@data/*': resolve(process.cwd(), './src/data/*')
     }
   },
-  integrations: [react()]
+  integrations: [
+    react(),
+    mdx({
+      syntaxHighlight: 'shiki',
+      shikiConfig: {
+        theme: 'aurora-x',
+        wrap: true
+      },
+      gfm: false
+    })
+  ]
 })

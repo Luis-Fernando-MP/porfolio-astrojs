@@ -1,4 +1,5 @@
 /*
+/src/env.d.ts
 # Except these files & folders
 !/src
 !/public

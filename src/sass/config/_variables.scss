@@ -24,24 +24,26 @@ $ani: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   --global-family-size: 12px;
   --xl-font-size: 4.8em;
   --h1-font-size: 3em;
-  --h2-font-size: 2em;
-  --h3-font-size: 1.8em;
-  --h4-font-size: 1.6em;
-  --p-font-size: 1.4em;
-  --span-font-size: 1.2em;
+  --h2-font-size: 1.8em;
+  --h3-font-size: 1.6em;
+  --h4-font-size: 1.4em;
+  --p-font-size: 1.2em;
+  --span-font-size: 1.1em;
   --small-font-size: 1em;
   --smaller-font-size: 0.8em;
 
-  --bg-fondo-1: #07090e;
-  --bg-fondo-2: #0f121a;
-  --txt-letra-1: #d5defb;
-  --txt-letra-2: #a1acce;
-  --bg-normal: #6680db;
   @media (prefers-color-scheme: light) {
     --bg-fondo-1: #f5faff;
     --bg-fondo-2: #ebf5ff;
     --txt-letra-1: #000000;
     --txt-letra-2: #38394a;
+    --bg-normal: #6680db;
+  }
+  @media (prefers-color-scheme: dark) {
+    --bg-fondo-1: #07090e;
+    --bg-fondo-2: #0f121a;
+    --txt-letra-1: #d5defb;
+    --txt-letra-2: #a1acce;
     --bg-normal: #6680db;
   }
 }
