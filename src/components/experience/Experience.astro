@@ -5,6 +5,7 @@ import type workExperiences from '@data/workExperiences.json'
 import Icon from '@/utils/Icon.astro'
 import { Eye } from '@icons/index'
 import { Image } from 'astro:assets'
+import { slugify } from '@/utils/format'
 
 interface Props {
   history: (typeof workExperiences)[0]
@@ -25,7 +26,7 @@ const { date, position, url, background, responsibilities, title } = history
       <Image src='/me.webp' alt='photo luis Fernando' width='20' height='20' />
       <a href={url} target='_blank' rel='noopener noreferrer'>
         <img
-          src={`./companies/${background}.webp`}
+          src={`./companies/${background}`}
           loading='lazy'
           decoding='async'
         />
@@ -33,7 +34,7 @@ const { date, position, url, background, responsibilities, title } = history
     </div>
   </aside>
   <p>{responsibilities[0]}</p>
-  <a href={`experiences/${title}`} class='btn'>
+  <a href={`/works/${slugify(title)}`} class='btn'>
     <p>Saber más...</p>
     <Icon file={Eye} />
   </a>

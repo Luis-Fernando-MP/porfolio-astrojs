@@ -1,12 +1,15 @@
 ---
+import './styles.scss'
+import './responsiveStyle.scss'
+
 import workExperiences from '@data/workExperiences.json'
 import Icon from '@/utils/Icon.astro'
 import { Internship } from '@icons/index'
 import { Experience } from '@components/index'
-import './styles.scss'
-import './responsiveStyle.scss'
 
-const works = workExperiences.filter(work => work.rel.includes('developer'))
+const works = workExperiences.filter(work =>
+  work.rel.includes('desarrollado web')
+)
 ---
 
 <section class='experience section hash-nav' id='experiences'>
@@ -21,7 +24,7 @@ const works = workExperiences.filter(work => work.rel.includes('developer'))
         ¡Gracias por contribuir a mi fructífera trayectoria! 🚀
       </b>
     </p>
-    <a href='experiences' class='btn'>
+    <a href='/works' class='btn'>
       <p>Mira todas mis experiencias formativas</p>
       <Icon file={Internship} />
     </a>

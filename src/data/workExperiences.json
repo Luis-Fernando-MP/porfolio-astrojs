@@ -1,79 +1,90 @@
 [
   {
-    "title": "AVS Consultores Informáticos",
-    "date": "Jul. 2023 – 0ct. 2023",
     "workTime": 4,
-    "position": "Desarrollador de aplicaciones web",
-    "description": "Organización local que promueve el desarrollo sostenible de aplicaciones, ofrece servicios públicos, impulsa la participación ciudadana y conserva la identidad cultural de la empresa.",
-    "background": "AVS-CONSULTORES",
-    "rel": ["developer", "practicante", "Cabecilla de equipo"],
     "url": "https://avsconsultoresinformaticos.edu.pe/",
+    "title": "AVS Consultores Informáticos",
+    "rel": ["desarrollado web", "Practicante", "Cabecilla de equipo"],
+    "position": "Desarrollador de aplicaciones web",
+    "id": "work1",
+    "finalArgument": "Mi experiencia en esta empresa ha sido más que un trabajo; ha sido un viaje de aprendizaje y crecimiento. Agradezco la oportunidad de mejorar mis habilidades, ya que he mejorado en el uso de monorepositorios con ReactJs y NestJs. ¡Fue un honor haber sido parte de este equipo inspirador!",
+    "description": "Organización local que promueve el desarrollo sostenible de aplicaciones, ofrece servicios públicos, impulsa la participación ciudadana y conserva la identidad cultural de la empresa.",
+    "date": "Jul. 2023 – 0ct. 2023",
+    "background": "AVS-CONSULTORES.webp",
     "responsibilities": [
       "Desarrolle y mantuve las aplicaciones web utilizando tecnologías como JavaScript y PHP. Ademas comandé y participé en la elaboración de algunas aplicación como Alhem SAC y Casa Verde.",
-      "Administré los contenidos digitales del sitio web."
-    ],
-    "finalArgument": "Mi experiencia en esta empresa ha sido más que un trabajo; ha sido un viaje de aprendizaje y crecimiento. Agradezco la oportunidad de mejorar mis habilidades, ya que he mejorado en el uso de monorepositorios con ReactJs y NestJs. ¡Fue un honor haber sido parte de este equipo inspirador!"
+      "Administre los contenidos digitales del sitio web."
+    ]
   },
   {
-    "title": "Chia Puquio",
-    "date": "Ene. 2023 - Ago. 2023",
     "workTime": 8,
+    "url": "",
+    "title": "Chia Puquio",
+    "rel": ["No relacionados", "Cabecilla de equipo", "Mas tiempo"],
     "position": "Asesor del servicio de atención al cliente",
+    "id": "work2",
+    "finalArgument": "",
     "description": "El Chia Puquio, un encantador recreo turístico en Ingenio Concepción, Huancayo, Junín, es conocido por su exquisita preparación de platillos a base de trucha y sus impresionantes vistas panorámicas. Este destino es altamente popular en la zona gracias a su combinación única de experiencia culinaria y entorno natural pintoresco.",
-    "background": "ingenio",
-    "rel": ["No relacionados", "Cabecilla de equipo"],
-    "url": null,
+    "date": "Ene. 2023 - Ago. 2023",
+    "background": "ingenio.webp",
     "responsibilities": [
       "Cumplí con el servicio de atención al cliente.",
       "Participé en trabajos grupales para mejorar atención a los visitantes.",
       "Entoné una atención amable y personalizada a los comensales."
-    ],
-    "finalArgument": ""
+    ]
   },
   {
-    "title": "La Huaycha",
-    "date": "Ago. 2022 - Ene. 2023",
     "workTime": 6,
-    "position": "Especialista en ventas del servicio de atención al cliente",
-    "description": "La Huaycha, es un destacado recreo turístico en la marguen derecha de la ciudad de Huancayo, destaca por su continua innovación y encanto natural.",
-    "background": "huaycha",
-    "rel": ["No relacionados"],
     "url": "https://web.facebook.com/la.huaycha.huancayo.recreo/?_rdc=1&_rdr",
+    "title": "La Huaycha",
+    "rel": ["No relacionados"],
+    "position": "Especialista en ventas del servicio de atención al cliente",
+    "id": "work3",
+    "finalArgument": "...",
+    "description": "La Huaycha, es un destacado recreo turístico en la marguen derecha de la ciudad de Huancayo, destaca por su continua innovación y encanto natural.",
+    "date": "Ago. 2022 - Ene. 2023",
+    "background": "huaycha.webp",
     "responsibilities": [
       "Me encargué de proporcionar un servicio excepcional, resolviendo inquietudes y ofreciendo orientación experta a los visitantes.",
       "Encabecé la planificación y ejecución de eventos especiales, contribuyendo a crear experiencias memorables y atrayentes para los visitantes.",
       "Mejoré mis habilidades de trabajo en equipo, participando activamente para mejorar el atractivo del recreo."
-    ],
-    "finalArgument": "..."
+    ]
   },
   {
-    "title": "MUNICIPALIDAD DE SAN AGUSTÍN DE CAJAS",
-    "date": "Abr. 2020 - Jul. 2021",
     "workTime": 4,
-    "position": "Practicante de computación",
-    "description": "Organización local que busca el desarrollo integral y sostenible del distrito de San Agustín de Cajas a través de la planificación territorial, infraestructura básica, calidad ambiental, competitividad económica, gobernabilidad, participación ciudadana, seguridad ciudadana e identidad.",
-    "background": "cajas",
-    "rel": ["developer", "practicante", "computación"],
     "url": "https://www.munisanagustin.gob.pe/",
+    "title": "MUNICIPALIDAD DE SAN AGUSTÍN DE CAJAS",
+    "rel": ["desarrollado web", "Practicante", "Mas tiempo"],
+    "position": "Practicante de computación",
+    "id": "work4",
+    "finalArgument": "...",
+    "description": "Organización local que busca el desarrollo integral y sostenible del distrito de San Agustín de Cajas a través de la planificación territorial, infraestructura básica, calidad ambiental, competitividad económica, gobernabilidad, participación ciudadana, seguridad ciudadana e identidad.",
+    "date": "Abr. 2020 - Jul. 2021",
+    "background": "cajas.webp",
     "responsibilities": [
       "Gestioné los contenidos digitales del sitio web, además de administrar algunos documentos e información relevante al portal de transparencia de la localidad.",
       "Realice el mantenimiento a los sistemas operativos de la organización, además se aceptó mi propuesta, para la implementación de SO linux más livianos para las computadoras más antiguas."
-    ],
-    "finalArgument": "..."
+    ]
   },
   {
-    "title": "Industria Gráfica Inmaculada Concepción",
-    "date": "Abr. 2019 - Dic. 2019",
     "workTime": 9,
-    "position": "Practicante de diseño web",
-    "description": "Establecida en 1997 como persona natural con negocio, destaca como un referente confiable en la industria gráfica. Consolidada como un pilar en servicios gráficos de la localidad.",
-    "background": "concepcion",
-    "rel": ["developer", "diseñador", "practicante", "computación"],
     "url": "https://pe.todosnegocios.com/gr%C3%A1fica-inmaculada-concepci%C3%B3n-955-806-691",
+    "title": "Industria Gráfica Inmaculada Concepción",
+    "position": "Practicante de diseño web",
+    "id": "work5",
+    "finalArgument": "...",
+    "description": "Establecida en 1997 como persona natural con negocio, destaca como un referente confiable en la industria gráfica. Consolidada como un pilar en servicios gráficos de la localidad.",
+    "date": "Abr. 2019 - Dic. 2019",
+    "background": "concepcion.webp",
+    "rel": [
+      "desarrollado web",
+      "diseñador",
+      "Practicante",
+      "computación",
+      "Mas tiempo"
+    ],
     "responsibilities": [
       "Realicé diseños para impresión, como folletos y tarjetas de presentación. Además, me encargué de la maquetación y diseño de algunas páginas web responsivas para los clientes.",
       "Realicé la edición de imágenes, retoque fotográfico, y elaboré ilustraciones personalizadas, empleando herramientas como Figma, WordPress y CorelDRAW."
-    ],
-    "finalArgument": "..."
+    ]
   }
 ]

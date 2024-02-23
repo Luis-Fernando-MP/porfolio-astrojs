@@ -1,6 +1,5 @@
 ---
 import type { ImageMetadata } from 'astro'
-import Image from './Image.astro'
 import { getName } from './format'
 
 interface Props {
@@ -11,5 +10,12 @@ const { file } = Astro.props
 ---
 
 <div class='icon'>
-  <Image src={file.src} alt={`Icon name - ${getName(file.src)}`} />
+  <img
+    src={file.src}
+    alt={`Icon name - ${getName(file.src)}`}
+    loading='lazy'
+    decoding='async'
+    width='30'
+    height='30'
+  />
 </div>

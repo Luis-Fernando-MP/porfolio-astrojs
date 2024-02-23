@@ -1,9 +1,9 @@
 import type { JSX, FC, ReactNode } from 'react'
-import type { IProjectBlock } from '@pages/projects/ProjectsBlock'
 import { Figma, GitHub, Internet } from '@icons/index'
 import './style.scss'
 import './responsiveStyle.scss'
 import { slugify } from '@/utils/format'
+import type { IProjectBlock } from '@pages/projects/indexBlock'
 
 interface TProject extends IProjectBlock {
   children?: ReactNode[]
@@ -15,8 +15,8 @@ const iconLinks = {
   web: Internet
 }
 
-const Project: FC<TProject> = (props): JSX.Element => {
-  const { background, description, links, title, state } = props
+const Project: FC<TProject> = ({ ...project }): JSX.Element => {
+  const { background, description, links, title, state } = project
 
   return (
     <li
@@ -41,7 +41,7 @@ const Project: FC<TProject> = (props): JSX.Element => {
               .map(([name, link]) => (
                 <a
                   key={name}
-                  href={link}
+                  href={link ?? ''}
                   target='_blank'
                   rel='noopener noreferrer'
                 >

@@ -41,9 +41,9 @@ const Filters: FC<TFilters> = ({
     <ul className='filters'>
       <li className='filters-item'>
         <button
-          className={`filters-action error ${
+          className={`filters-action btn error ${
             activeFilter === 'all' && 'active'
-          } btn`}
+          }`}
           onClick={() => handleFilter('all')}
         >
           <img
@@ -59,9 +59,9 @@ const Filters: FC<TFilters> = ({
       {filters.map(({ icon, name }) => (
         <li key={randomID(name)} className='filters-item'>
           <button
-            className={`filters-action ${
+            className={`filters-action btn ${
               activeFilter === name && 'active'
-            } btn`}
+            }`}
             onClick={() => handleFilter(name)}
           >
             <img

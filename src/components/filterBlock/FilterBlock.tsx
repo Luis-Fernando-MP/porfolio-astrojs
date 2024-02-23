@@ -1,16 +1,15 @@
+import './style.scss'
+import './responsiveStyle.scss'
+
 import type { TFilter } from '@components/filters/Filters'
-import type { IProjectBlock } from '@pages/projects/ProjectsBlock'
+import type { IWorkExperience } from '@pages/works/indexBlock'
+import type { IProjectBlock } from '@pages/projects/indexBlock'
 import Autosuggest from 'react-autosuggest'
 import { useState, type JSX, type ReactNode, type FC } from 'react'
 import { randomID } from '@/utils/randomID'
 import { Filters, Suggestion } from '@components/index'
-import './style.scss'
-import './responsiveStyle.scss'
 
-import workExperiences from '@data/workExperiences.json'
-type temporal = (typeof workExperiences)[0]
-
-type TypesFilterBlock = IProjectBlock | temporal
+type TypesFilterBlock = IProjectBlock | IWorkExperience
 
 type TFilterBlock = {
   children?: ReactNode[] | ReactNode

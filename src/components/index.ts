@@ -12,6 +12,7 @@ import Experiences from './experiences/Experiences.astro'
 import Experience from './experience/Experience.astro'
 import Contact from './contact/Contact.astro'
 import AboutMe from './aboutMe/AboutMe.astro'
+import ExperienceItem from './experience-item/ExperienceItem.tsx'
 
 export {
   Themes,
@@ -27,5 +28,6 @@ export {
   Experiences,
   Experience,
   Contact,
-  AboutMe
+  AboutMe,
+  ExperienceItem
 }
