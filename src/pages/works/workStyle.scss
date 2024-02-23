@@ -1,0 +1,20 @@
+@use '@sass/utils/defaults' as defs;
+@use '@sass/utils/border' as border;
+@use '@sass/config/variables' as v;
+
+.workPage {
+  &-container {
+    @include defs.gap-default-items($ali: flex-start);
+    button.btn {
+      width: auto;
+      color: v.$txt-1;
+      background-color: v.$bg-1;
+    }
+  }
+  &-content {
+    @include defs.gap-default-items();
+    background-color: v.$bg-2;
+    border-radius: v.$radius;
+    padding: v.$padding;
+  }
+}

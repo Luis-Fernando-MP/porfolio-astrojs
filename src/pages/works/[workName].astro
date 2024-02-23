@@ -1,0 +1,30 @@
+---
+import './workStyle.scss'
+
+import works from '@data/workExperiences.json'
+import Layout from '@layouts/Layout.astro'
+import { slugify } from '@/utils/format'
+import { Footer, Nav } from '@components/index'
+import { Content } from '@/content/works/work.mdx'
+
+export function getStaticPaths() {
+  const routes = works.map(work => ({
+    params: { workName: slugify(work.title) },
+    props: work
+  }))
+  return routes
+}
+
+const work = Astro.props
+---
+
+<Layout title={`proyecto: ${slugify(work.title)}`}>
+  <Nav useHttp />
+  <section class='workPage-container'>
+    <button class='btn' onclick='window.history.back()'>⬅️ Regresar</button>
+    <article class='workPage-content'>
+      <Content work={work} />
+    </article>
+  </section>
+  <Footer />
+</Layout>

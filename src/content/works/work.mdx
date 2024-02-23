@@ -1,0 +1,56 @@
+import { slugify } from '../../utils/format'
+
+<div>
+  <img
+    style='margin: auto;width: 100%;'
+    src={`https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=5104d3&width=1000&lines=${props.work.responsibilities.map(
+      responsibility => slugify(responsibility) + ';'
+    )}`}
+  />
+</div>
+
+<a
+  href={props.work.url}
+  target='__blank'
+  style='margin: auto;width: 50px;display: flex; gap: 15px;'
+>
+  <img
+    className='workMD-company__image'
+    src={`/me.webp`}
+    style='border-radius: 5px'
+    width='50'
+    height='50'
+  />
+  <img
+    className='workMD-company__image'
+    src={`/companies/${props.work.background}`}
+    style='border-radius: 5px'
+    width='50'
+    height='50'
+  />
+</a>
+<h1 align='center'>{props.work.title}</h1>
+#### {props.work.date}
+<br />
+
+### 🏫&nbsp; Institución:
+
+<p>{props.work.description}</p>
+<br />
+
+### 👨🏻‍💻&nbsp; {props.work.position}
+
+<ul>
+  {props.work.responsibilities.map((responsibility, i) => (
+    <li>
+      <p>
+        {i + 1}: {responsibility}
+      </p>
+    </li>
+  ))}
+</ul>
+<br />
+
+### 🏫&nbsp; Estancia
+
+<p>{props.work.finalArgument}</p>
