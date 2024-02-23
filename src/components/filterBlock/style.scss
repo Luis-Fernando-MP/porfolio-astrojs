@@ -39,10 +39,10 @@ $suggestion-container: "div[aria-owns='react-autowhatever-1']";
       padding: v.$padding;
       border-radius: v.$radius;
       background-color: v.$bg-2;
+      @include defs.hover;
       &:focus {
         outline-color: v.$colorGr;
       }
-      @include defs.hover;
     }
   }
   &-data {

@@ -1,0 +1,34 @@
+@use '@sass/config/variables' as v;
+@use '@sass/utils/defaults' as defs;
+
+.experienceItem {
+  width: 230px;
+  padding: v.$padding;
+  border-radius: v.$radius;
+
+  @include defs.gap-default-items($ali: center);
+  justify-content: center;
+  background-color: v.$bg-2;
+  h3,
+  p {
+    text-align: center;
+  }
+  h3 {
+    display: grid;
+    place-content: center;
+    height: 50px;
+  }
+  aside {
+    display: flex;
+    img {
+      width: v.$icon;
+      height: v.$icon;
+      object-fit: cover;
+      border-radius: 5px;
+      &:last-child {
+        position: relative;
+        left: -10px;
+      }
+    }
+  }
+}

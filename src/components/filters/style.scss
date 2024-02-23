@@ -7,13 +7,10 @@
   flex-wrap: wrap;
   &-action {
     background-color: v.$bg-2;
-    padding: v.$padding * 1.2;
-    h3 {
-      font-size: v.$f-h4;
-    }
+    box-shadow: v.$shadow;
     &.active {
       background-color: v.$colorGr;
-      h3 {
+      h4 {
         color: white;
       }
     }
